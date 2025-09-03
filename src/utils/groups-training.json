@@ -1,0 +1,617 @@
+{
+  "chest-1": {
+    "name": "Pecho",
+    "id": 1,
+    "begginer": {
+      "name": "Principiante",
+      "id": 1,
+      "exercises": [
+        {
+          "id": 1,
+          "name": "Flexiones",
+          "time": 30,
+          "videoLoop": "",
+          "description": "Realiza flexiones con los brazos ligeramente más abiertos que el ancho de los hombros."
+        },
+        {
+          "id": 2,
+          "name": "Press de pecho con mancuernas",
+          "time": 30,
+          "videoLoop": "",
+          "description": "Acuéstate en un banco y realiza el movimiento de press con mancuernas."
+        },
+        {
+          "id": 3,
+          "name": "Fondos en banco",
+          "time": 30,
+          "videoLoop": "",
+          "description": "Coloca las manos en un banco y baja el cuerpo doblando los codos."
+        },
+        {
+          "id": 4,
+          "name": "Aperturas con mancuernas",
+          "time": 30,
+          "videoLoop": "",
+          "description": "Realiza aperturas en banco plano con mancuernas."
+        },
+        {
+          "id": 5,
+          "name": "Flexiones inclinadas",
+          "time": 30,
+
+          "videoLoop": "",
+          "description": "Flexiones con los pies elevados en un banco."
+        },
+        {
+          "id": 6,
+          "name": "Flexiones declinadas",
+          "time": 30,
+
+          "videoLoop": "",
+          "description": "Flexiones con las manos en un banco, pies en el suelo."
+        }
+      ]
+    },
+    "intermediate": {
+      "name": "Intermedio",
+      "id": 2,
+      "exercises": [
+        {
+          "id": 1,
+          "name": "Press de pecho con barra",
+          "time": 45,
+          "videoLoop": "",
+          "description": "Realiza press de pecho con barra en banco plano."
+        },
+        {
+          "id": 2,
+          "name": "Fondos en paralelas",
+          "time": 45,
+
+          "videoLoop": "",
+          "description": "Realiza fondos en paralelas, baja hasta que los brazos estén en ángulo recto."
+        },
+        {
+          "id": 3,
+          "name": "Press inclinado con mancuernas",
+          "time": 45,
+
+          "videoLoop": "",
+          "description": "Acuéstate en un banco inclinado y realiza press con mancuernas."
+        },
+        {
+          "id": 4,
+          "name": "Aperturas con cables",
+          "time": 45,
+
+          "videoLoop": "",
+          "description": "Realiza aperturas con cables en la máquina."
+        },
+        {
+          "id": 5,
+          "name": "Flexiones con palmas juntas",
+          "time": 45,
+
+          "videoLoop": "",
+          "description": "Realiza flexiones con las palmas juntas, enfocándote en el pectoral interno."
+        },
+        {
+          "id": 6,
+          "name": "Flexiones en paralelas",
+          "time": 45,
+
+          "videoLoop": "",
+          "description": "Flexiones en paralelas, baja hasta que los brazos estén en ángulo recto."
+        }
+      ]
+    },
+    "advanced": {
+      "name": "Avanzado",
+      "id": 3,
+      "exercises": [
+        {
+          "id": 1,
+          "name": "Press de pecho con barra (peso máximo)",
+          "time": 60,
+
+          "videoLoop": "",
+          "description": "Realiza press de pecho con barra en banco plano con el máximo peso."
+        },
+        {
+          "id": 2,
+          "name": "Fondos en anillas",
+          "time": 60,
+
+          "videoLoop": "",
+          "description": "Realiza fondos en anillas, manteniendo la estabilidad del cuerpo."
+        },
+        {
+          "id": 3,
+          "name": "Press inclinado con barra",
+          "time": 60,
+
+          "videoLoop": "",
+          "description": "Acuéstate en un banco inclinado y realiza press con barra."
+        },
+        {
+          "id": 4,
+          "name": "Aperturas con mancuernas (peso máximo)",
+          "time": 60,
+
+          "videoLoop": "",
+          "description": "Realiza aperturas con mancuernas en banco plano con el máximo peso."
+        },
+        {
+          "id": 5,
+          "name": "Flexiones en una mano",
+          "time": 60,
+
+          "videoLoop": "",
+          "description": "Flexiones utilizando solo una mano, cambiando de mano cada 10 segundos."
+        },
+        {
+          "id": 6,
+          "name": "Flexiones con aplaudo",
+          "time": 60,
+
+          "videoLoop": "",
+          "description": "Realiza flexiones explosivas con un aplaudo en el aire."
+        }
+      ]
+    }
+  },
+  "arms-1": {
+    "name": "Brazos & Hombros",
+    "id": 2,
+    "begginer": {
+      "name": "Principiante",
+      "id": 1,
+      "exercises": [
+        {
+          "id": 1,
+          "name": "Flexiones de pared",
+          "time": 30,
+
+          "videoLoop": "",
+          "description": "Colócate de pie frente a una pared, apoyando las manos y realizando flexiones inclinadas."
+        },
+        {
+          "id": 2,
+          "name": "Flexiones modificadas",
+          "time": 30,
+          "videoLoop": "",
+          "description": "Realiza flexiones apoyando las rodillas en el suelo para reducir la dificultad."
+        },
+        {
+          "id": 3,
+          "name": "Elevaciones laterales sin peso",
+          "time": 30,
+          "videoLoop": "",
+          "description": "Levanta los brazos lateralmente hasta la altura de los hombros y baja lentamente."
+        },
+        {
+          "id": 4,
+          "name": "Fondos en silla",
+          "time": 30,
+          "videoLoop": "",
+          "description": "Coloca las manos en una silla y realiza fondos manteniendo las piernas estiradas."
+        },
+        {
+          "id": 5,
+          "name": "Círculos de brazos",
+          "time": 30,
+          "videoLoop": "",
+          "description": "Realiza pequeños círculos con los brazos extendidos hacia los lados."
+        },
+        {
+          "id": 6,
+          "name": "Flexiones de tríceps",
+          "time": 30,
+          "videoLoop": "",
+          "description": "Realiza flexiones con los brazos pegados al cuerpo para trabajar el tríceps."
+        }
+      ]
+    },
+    "intermediate": {
+      "name": "Intermedio",
+      "id": 2,
+      "exercises": [
+        {
+          "id": 1,
+          "name": "Flexiones estándar",
+          "time": 45,
+
+          "videoLoop": "",
+          "description": "Realiza flexiones clásicas manteniendo el cuerpo recto."
+        },
+        {
+          "id": 2,
+          "name": "Flexiones de tríceps",
+          "time": 45,
+          "videoLoop": "",
+          "description": "Realiza flexiones con las manos más cerca una de la otra, enfocando el esfuerzo en los tríceps."
+        },
+        {
+          "id": 3,
+          "name": "Elevaciones frontales sin peso",
+          "time": 45,
+          "videoLoop": "",
+          "description": "Levanta los brazos hacia adelante hasta la altura de los hombros y baja lentamente."
+        },
+        {
+          "id": 4,
+          "name": "Flexiones de pike",
+          "time": 45,
+          "videoLoop": "",
+          "description": "Con el cuerpo en forma de V invertida, realiza flexiones enfocadas en los hombros."
+        },
+        {
+          "id": 5,
+          "name": "Rotaciones de hombros",
+          "time": 45,
+          "videoLoop": "",
+          "description": "Realiza rotaciones con los brazos estirados a los lados, hacia adelante y hacia atrás."
+        },
+        {
+          "id": 6,
+          "name": "Fondos en silla avanzada",
+          "time": 45,
+          "videoLoop": "",
+          "description": "Con las manos en una silla, realiza fondos manteniendo las piernas elevadas para mayor dificultad."
+        }
+      ]
+    },
+    "advanced": {
+      "name": "Avanzado",
+      "id": 3,
+      "exercises": [
+        {
+          "id": 1,
+          "name": "Flexiones con palmada",
+          "time": 60,
+
+          "videoLoop": "",
+          "description": "Realiza flexiones explosivas que permitan dar una palmada entre cada repetición."
+        },
+        {
+          "id": 2,
+          "name": "Flexiones de diamante",
+          "time": 60,
+          "videoLoop": "",
+          "description": "Realiza flexiones con las manos juntas formando un diamante bajo el pecho, enfocando el trabajo en los tríceps."
+        },
+        {
+          "id": 3,
+          "name": "Elevaciones laterales con isometría",
+          "time": 60,
+          "videoLoop": "",
+          "description": "Eleva los brazos a los lados y mantenlos en la posición elevada durante unos segundos."
+        },
+        {
+          "id": 4,
+          "name": "Flexiones de archer",
+          "time": 60,
+          "videoLoop": "",
+          "description": "Realiza flexiones con un brazo más extendido y alterna entre ambos lados."
+        },
+        {
+          "id": 5,
+          "name": "Flexiones declinadas",
+          "time": 60,
+          "videoLoop": "",
+          "description": "Con los pies elevados en una superficie, realiza flexiones para un mayor desafío."
+        },
+        {
+          "id": 6,
+          "name": "Fondos en paralelas improvisadas",
+          "time": 60,
+          "videoLoop": "",
+          "description": "Utiliza dos sillas para improvisar unas paralelas y realiza fondos de tríceps."
+        }
+      ]
+    }
+  },
+  "legs-1": {
+    "name": "Glúteos & Piernas",
+    "id": 3,
+    "begginer": {
+      "name": "Principiante",
+      "id": 1,
+      "exercises": [
+        {
+          "id": 1,
+          "name": "Sentadillas básicas",
+          "time": 30,
+
+          "videoLoop": "",
+          "description": "Realiza sentadillas básicas manteniendo los pies separados al ancho de los hombros."
+        },
+        {
+          "id": 2,
+          "name": "Elevaciones de talones",
+          "time": 30,
+          "videoLoop": "",
+          "description": "Ponte de pie y eleva los talones para trabajar los gemelos."
+        },
+        {
+          "id": 3,
+          "name": "Puente de glúteos",
+          "time": 30,
+          "videoLoop": "",
+          "description": "Acuéstate boca arriba, flexiona las rodillas y eleva la cadera hacia arriba."
+        },
+        {
+          "id": 4,
+          "name": "Estocadas estáticas",
+          "time": 30,
+          "videoLoop": "",
+          "description": "Da un paso hacia adelante y baja la rodilla trasera hacia el suelo sin tocarlo."
+        },
+        {
+          "id": 5,
+          "name": "Flexiones de pierna de pie",
+          "time": 30,
+          "videoLoop": "",
+          "description": "Ponte de pie y flexiona una pierna hacia atrás, alternando entre ambas piernas."
+        },
+        {
+          "id": 6,
+          "name": "Desplantes laterales",
+          "time": 30,
+          "videoLoop": "",
+          "description": "Da un paso lateral amplio y baja la cadera hacia esa pierna, manteniendo la otra estirada."
+        }
+      ]
+    },
+    "intermediate": {
+      "name": "Intermedio",
+      "id": 2,
+      "exercises": [
+        {
+          "id": 1,
+          "name": "Sentadillas con salto",
+          "time": 45,
+
+          "videoLoop": "",
+          "description": "Realiza sentadillas y al subir realiza un pequeño salto."
+        },
+        {
+          "id": 2,
+          "name": "Estocadas inversas",
+          "time": 45,
+          "videoLoop": "",
+          "description": "Da un paso hacia atrás y baja la rodilla trasera hacia el suelo."
+        },
+        {
+          "id": 3,
+          "name": "Sentadillas sumo",
+          "time": 45,
+          "videoLoop": "",
+          "description": "Realiza sentadillas con las piernas más separadas y los pies apuntando hacia afuera."
+        },
+        {
+          "id": 4,
+          "name": "Zancadas con elevación de rodilla",
+          "time": 45,
+          "videoLoop": "",
+          "description": "Da un paso hacia adelante, baja y al subir, eleva la rodilla contraria."
+        },
+        {
+          "id": 5,
+          "name": "Levantamiento de pierna lateral",
+          "time": 45,
+          "videoLoop": "",
+          "description": "Acuéstate de lado y levanta la pierna superior manteniéndola recta."
+        },
+        {
+          "id": 6,
+          "name": "Puente de glúteos a una pierna",
+          "time": 45,
+          "videoLoop": "",
+          "description": "Acuéstate boca arriba y realiza el puente de glúteos, pero con una pierna elevada."
+        }
+      ]
+    },
+    "advanced": {
+      "name": "Avanzado",
+      "id": 3,
+      "exercises": [
+        {
+          "id": 1,
+          "name": "Sentadillas pistol",
+          "time": 60,
+
+          "videoLoop": "",
+          "description": "Realiza sentadillas a una pierna, manteniendo la otra pierna estirada hacia adelante."
+        },
+        {
+          "id": 2,
+          "name": "Saltos pliométricos",
+          "time": 60,
+          "videoLoop": "",
+          "description": "Realiza saltos explosivos hacia arriba desde la posición de sentadilla."
+        },
+        {
+          "id": 3,
+          "name": "Estocadas con salto",
+          "time": 60,
+          "videoLoop": "",
+          "description": "Realiza estocadas alternadas con un salto en el cambio de pierna."
+        },
+        {
+          "id": 4,
+          "name": "Zancadas largas con salto",
+          "time": 60,
+          "videoLoop": "",
+          "description": "Da zancadas largas y agrega un salto para incrementar la dificultad."
+        },
+        {
+          "id": 5,
+          "name": "Subidas al escalón",
+          "time": 60,
+          "videoLoop": "",
+          "description": "Sube a un escalón o silla de forma alternada con cada pierna."
+        },
+        {
+          "id": 6,
+          "name": "Sentadillas búlgaras",
+          "time": 60,
+          "videoLoop": "",
+          "description": "Con un pie elevado en una silla detrás de ti, realiza sentadillas a una pierna."
+        }
+      ]
+    }
+  },
+  "abs-1": {
+    "name": "Abdominales",
+    "id": 4,
+    "begginer": {
+      "name": "Principiante",
+      "id": 1,
+      "exercises": [
+        {
+          "id": 1,
+          "name": "Crunches básicos",
+          "time": 30,
+
+          "videoLoop": "",
+          "description": "Acuéstate boca arriba con las rodillas flexionadas y levanta el torso hacia las rodillas."
+        },
+        {
+          "id": 2,
+          "name": "Elevaciones de piernas",
+          "time": 30,
+          "videoLoop": "",
+          "description": "Acuéstate boca arriba y eleva ambas piernas manteniéndolas rectas."
+        },
+        {
+          "id": 3,
+          "name": "Plancha frontal",
+          "time": 30,
+          "videoLoop": "",
+          "description": "Apóyate en los antebrazos y los dedos de los pies, manteniendo el cuerpo recto."
+        },
+        {
+          "id": 4,
+          "name": "Rodillas al pecho sentado",
+          "time": 30,
+
+          "videoLoop": "",
+          "description": "Siéntate en el suelo y lleva las rodillas al pecho, luego estira las piernas hacia adelante."
+        },
+        {
+          "id": 5,
+          "name": "Twist ruso sin peso",
+          "time": 30,
+          "videoLoop": "",
+          "description": "Siéntate con las piernas flexionadas, levanta los pies del suelo y gira el torso de lado a lado."
+        },
+        {
+          "id": 6,
+          "name": "Plancha lateral",
+          "time": 30,
+          "videoLoop": "",
+          "description": "Apóyate en un antebrazo y el lateral del pie, manteniendo el cuerpo en línea recta."
+        }
+      ]
+    },
+    "intermediate": {
+      "name": "Intermedio",
+      "id": 2,
+      "exercises": [
+        {
+          "id": 1,
+          "name": "Crunches bicicleta",
+          "time": 45,
+
+          "videoLoop": "",
+          "description": "Acuéstate boca arriba y alterna llevar el codo al lado opuesto mientras pedaleas en el aire."
+        },
+        {
+          "id": 2,
+          "name": "Elevaciones de piernas alternas",
+          "time": 45,
+          "videoLoop": "",
+          "description": "Acuéstate boca arriba y eleva una pierna a la vez, alternando entre ellas."
+        },
+        {
+          "id": 3,
+          "name": "Plancha con toque de hombro",
+          "time": 45,
+          "videoLoop": "",
+          "description": "Mantén la posición de plancha y alterna tocar el hombro opuesto con cada mano."
+        },
+        {
+          "id": 4,
+          "name": "V-ups",
+          "time": 45,
+          "videoLoop": "",
+          "description": "Acuéstate boca arriba y levanta el torso y las piernas al mismo tiempo para formar una V."
+        },
+        {
+          "id": 5,
+          "name": "Alpinistas",
+          "time": 45,
+          "videoLoop": "",
+          "description": "En posición de plancha, alterna llevar las rodillas hacia el pecho a ritmo rápido."
+        },
+        {
+          "id": 6,
+          "name": "Plancha con elevación de pierna",
+          "time": 45,
+          "videoLoop": "",
+          "description": "Mantén la posición de plancha y eleva una pierna a la vez, manteniéndola recta."
+        }
+      ]
+    },
+    "advanced": {
+      "name": "Avanzado",
+      "id": 3,
+      "exercises": [
+        {
+          "id": 1,
+          "name": "Plancha con caminata lateral",
+          "time": 60,
+
+          "videoLoop": "",
+          "description": "En posición de plancha, mueve las manos y los pies hacia un lado y luego hacia el otro."
+        },
+        {
+          "id": 2,
+          "name": "Crunches inversos",
+          "time": 60,
+          "videoLoop": "",
+          "description": "Acuéstate boca arriba y lleva las rodillas hacia el pecho levantando las caderas del suelo."
+        },
+        {
+          "id": 3,
+          "name": "Plancha con saltos",
+          "time": 60,
+          "videoLoop": "",
+          "description": "Desde la posición de plancha, salta con los pies hacia adelante y atrás."
+        },
+        {
+          "id": 4,
+          "name": "Twist ruso con peso (botella)",
+          "time": 60,
+          "videoLoop": "",
+          "description": "Realiza el twist ruso sosteniendo una botella llena de agua o similar para agregar peso."
+        },
+        {
+          "id": 5,
+          "name": "Elevaciones de piernas con giro",
+          "time": 60,
+          "videoLoop": "",
+          "description": "Acuéstate boca arriba y eleva las piernas, luego gíralas de un lado a otro."
+        },
+        {
+          "id": 6,
+          "name": "Plancha con rodilla al codo",
+          "time": 60,
+          "videoLoop": "",
+          "description": "En posición de plancha, lleva una rodilla hacia el codo del mismo lado, alternando entre ambas."
+        }
+      ]
+    }
+  }
+}

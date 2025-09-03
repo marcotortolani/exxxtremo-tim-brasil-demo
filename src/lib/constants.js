@@ -1,0 +1,45 @@
+export const USER_DATA_INITIAL = {
+  name: '',
+  birth: '',
+  weight: '',
+  height: '',
+  dataAccepted: false,
+}
+
+export const CATEGORIES = {
+  abdominales: 87,
+  'brazos-y-hombros': 86,
+  carlos: 102,
+  leo: 103,
+  elena: 104,
+  carolina: 105,
+  deportes: 100,
+  entrenadores: 99,
+  entrenamientos: 82,
+  'estiramientos-y-calentamientos': 96,
+  'gluteos-y-piernas': 88,
+  nutricion: 95,
+  pecho: 85,
+  shorts: 97,
+  'sin-categoria': 1,
+  'tren-inferior': 84,
+  'tren-superior': 83,
+  'vida-saludable': 101,
+  zumba: 109,
+}
+
+export const TAGS = {
+  avanzado: 111,
+  avena: 108,
+  entrenador: 112,
+  entrenadora: 113,
+  frutas: 107,
+  'ganar-musculo': 94,
+  intermedio: 110,
+  licuados: 106,
+  'mejorar-forma-fisica': 89,
+  'mejorar-resistencia': 92,
+  'perder-peso': 93,
+  'reducir-stress': 91,
+  video: 72,
+}
