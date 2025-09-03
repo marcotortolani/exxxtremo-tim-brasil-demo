@@ -134,7 +134,7 @@ export default function Page() {
             {LEVEL_OPTIONS.map((option, key) => (
               <ButtonLevel
                 key={key}
-                name={option.name}
+                name={dictionary[option.name]}
                 onClick={() => handleLevel(option.value)}
                 active={currentTraining?.level === option.value}
               />
