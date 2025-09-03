@@ -3,7 +3,7 @@ import { getNewData } from '@/services/api-content'
 import SliderSports from './SliderSports'
 
 export default async function SectionSports({ dataCategories }) {
-  const categoriesReq = ['deportes']
+  const categoriesReq = ['sports']
   const categoriesFiltered = await dataCategories
     ?.filter((category) => categoriesReq.includes(category.slug))
     .map((item) => item.id)

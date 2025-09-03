@@ -20,16 +20,16 @@ export const ExerciseSectionImage = ({ groupProp = '' }) => {
     }
 
     switch (key) {
-      case 'pecho':
+      case 'chest':
         src = ChestInactive
         break
-      case 'brazos-y-hombros':
+      case 'arms-and-shoulders':
         src = ArmsInactive
         break
-      case 'gluteos-y-piernas':
+      case 'glutes-and-legs':
         src = LegsInactive
         break
-      case 'abdominales':
+      case 'abs':
         src = AbsInactive
         break
     }

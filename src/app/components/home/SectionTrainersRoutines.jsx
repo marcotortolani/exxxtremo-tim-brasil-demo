@@ -5,7 +5,7 @@ import SliderTrainersRoutines from './SliderTrainersRoutines'
 import { CATEGORIES, TAGS } from '@/lib/constants'
 
 export default async function SectionTrainersRoutines() {
-  const catName = 'entrenadores'
+  const catName = 'trainers'
 
   const { data } = await getNewData(
     `/posts?per_page=10&categories=${CATEGORIES[catName]}&tags=${TAGS['video']}`,

@@ -2,6 +2,7 @@ import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { ROUTINE_PROFILE, USER_ROUTINE } from '@/lib/routine/routine-constants'
 import { EXERCISE_STORE_INITIAL } from '@/lib/training/training-constants'
+import { PRODUCT_NAME } from '@/config/config'
 
 export const useRoutineStore = create(
   persist(
@@ -147,7 +148,7 @@ export const useRoutineStore = create(
       onCanUpdate: (canUpdate = false) => set({ canUpdate }),
     }),
     {
-      name: 'routine_profile',
+      name: `routine_profile-${PRODUCT_NAME}`,
       partialize: (state) => {
         return Object.fromEntries(
           Object.entries(state).filter(([key]) => !['canUpdate'].includes(key)),

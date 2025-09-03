@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { USER_DATA_INITIAL } from '@/lib/constants'
-
+import { PRODUCT_NAME } from '@/config/config'
 
 export const useUserStore = create(
   persist(
@@ -10,7 +10,7 @@ export const useUserStore = create(
       update: (data) => set({ user: { ...get().user, ...data } }),
     }),
     {
-      name: 'user',
+      name: `user-${PRODUCT_NAME}`,
     },
   ),
 )

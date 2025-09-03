@@ -49,14 +49,14 @@ export const RoutineScreen = () => {
         <div className=" flex items-center justify-between w-full">
           <div className="flex items-center gap-2">
             <span className=" px-4 py-2 uppercase text-sm bg-Primary font-oswaldLight text-DarkGray rounded-lg ">
-              {profile?.levels?.find((level) => level.active)?.name}
+              {dictionary[profile?.levels?.find((level) => level.active)?.name]}
             </span>
             <span className=" px-4 py-2 uppercase text-sm bg-Primary font-oswaldLight text-DarkGray rounded-lg ">
               {profile?.focusAreas?.find((area) => area.active)?.name}
             </span>
             <div className=" h-9 pl-2 pr-2 md:pr-4 py-0.5 md:py-1 bg-Primary rounded-lg flex items-center justify-center gap-2">
               <div className=" w-7 h-7 md:w-7 md:h-7 flex items-center justify-center ring-2 ring-DarkGray rounded-full overflow-hidden p-[0px] pt-0.5 pb-0">
-                {profile?.trainer === TAGS['entrenador'] ? (
+                {profile?.trainer === TAGS['trainer-male'] ? (
                   <PersonMale fill="#363636" />
                 ) : (
                   <PersonFemale fill="#363636" />
@@ -64,7 +64,7 @@ export const RoutineScreen = () => {
               </div>
 
               <span className=" hidden md:block uppercase text-sm bg-Primary font-oswaldLight text-DarkGray rounded-lg ">
-                {profile?.trainer === TAGS['entrenador']
+                {profile?.trainer === TAGS['trainer-male']
                   ? dictionary['Trainer (male)']
                   : dictionary['Trainer (female)']}
               </span>

@@ -37,12 +37,12 @@ export const RoutineUserScreenTwo = ({ onHandleBack, onHandleSuccess }) => {
         <form className=" grid grid-cols-2 gap-2">
           <div className=" relative p-2 bg-White rounded-xl flex items-center ">
             <Image
-              className=" w-14 h-12 border-r-[1px] border-r-Primary pr-2"
+              className=" w-10 h-10 md:w-14 md:h-12 border-r-[1px] border-r-Primary pr-1 md:pr-2"
               src={weightIcon}
               alt="icon"
             />
             <input
-              className=" w-full h-full focus:ring-0 pl-6 uppercase font-oswaldReg placeholder:font-oswaldLight placeholder:text-LightGray border-none"
+              className=" w-full h-full focus:ring-0 pl-2 md:pl-6 uppercase font-oswaldReg text-sm md:text-base placeholder:font-oswaldLight placeholder:text-LightGray border-none"
               type="number"
               name="weight"
               placeholder={dictionary['Weight (kg)']}
@@ -52,12 +52,12 @@ export const RoutineUserScreenTwo = ({ onHandleBack, onHandleSuccess }) => {
           </div>
           <div className=" relative p-2 bg-White rounded-xl flex items-center ">
             <Image
-              className=" w-14 h-12 border-r-[1px] border-r-Primary pr-2"
+              className=" w-10 h-10 md:w-14 md:h-12 border-r-[1px] border-r-Primary pr-1 md:pr-2"
               src={heightIcon}
               alt="icon"
             />
             <input
-              className=" w-full h-full focus:ring-0 pl-6 uppercase font-oswaldReg placeholder:font-oswaldLight placeholder:text-LightGray border-none"
+              className=" w-full h-full focus:ring-0 pl-2 md:pl-6 uppercase font-oswaldReg text-sm md:text-base placeholder:font-oswaldLight placeholder:text-LightGray border-none"
               type="number"
               name="height"
               placeholder={dictionary['Height (cm)']}

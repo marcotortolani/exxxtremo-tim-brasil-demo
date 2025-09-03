@@ -27,9 +27,9 @@ export default function page() {
   useEffect(() => {
     if (!apiCategories) return
     const categoriesReq = [
-      CATEGORIES['vida-saludable'],
-      CATEGORIES['deportes'],
-      CATEGORIES['nutricion'],
+      CATEGORIES['healthy-lifestyle'],
+      CATEGORIES['sports'],
+      CATEGORIES['nutrition'],
     ]
     const getData = async () => {
       const res = await getNewData(
@@ -71,7 +71,7 @@ export default function page() {
         </h1>
         <ShareSocialMedia
           title={dictionary['Trainers']}
-          category="Entrenadores"
+          category="trainers"
         />
       </div>
 

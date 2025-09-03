@@ -19,7 +19,7 @@ export const useNutritionPostsHook = () => {
   const callback = useCallback(async () => {
     try {
       const categories = apiCategories
-        .filter((category) => category.slug === 'nutricion')
+        .filter((category) => category.slug === 'nutrition')
         .map((item) => item.id)
         .join(',')
 
@@ -61,30 +61,28 @@ export const useRoutineWeek = () => {
     let tagsFetch = '',
       tagsExcludeFetch = ''
 
-    if (levelSelected === 'principiante') {
+    if (levelSelected === 'beginner') {
       tagsFetch = tags
       const tagsIDExcluded = getTagsIDByTargets(apiTags, [
-        { tag: 'intermedio' },
-        { tag: 'avanzado' },
+        { tag: 'intermediate' },
+        { tag: 'advanced' },
       ])
       tagsExcludeFetch = `${tagsExclude},${tagsIDExcluded}`
-    } else if (levelSelected === 'intermedio') {
+    } else if (levelSelected === 'intermediate') {
       const tagsIDIncluded = getTagsIDByTargets(apiTags, [
-        { tag: 'intermedio' },
+        { tag: 'intermediate' },
       ])
       tagsFetch = `${tagsIDIncluded},${tags}`
-      const tagsIDExcluded = getTagsIDByTargets(apiTags, [{ tag: 'avanzado' }])
+      const tagsIDExcluded = getTagsIDByTargets(apiTags, [{ tag: 'advanced' }])
       tagsExcludeFetch = `${tagsExclude},${tagsIDExcluded}`
-    } else if (levelSelected === 'avanzado') {
-      const tagsIDIncluded = getTagsIDByTargets(apiTags, [{ tag: 'avanzado' }])
+    } else if (levelSelected === 'advanced') {
+      const tagsIDIncluded = getTagsIDByTargets(apiTags, [{ tag: 'advanced' }])
       tagsFetch = `${tagsIDIncluded},${tags}`
       const tagsIDExcluded = getTagsIDByTargets(apiTags, [
-        { tag: 'intermedio' },
+        { tag: 'intermediate' },
       ])
       tagsExcludeFetch = `${tagsExclude},${tagsIDExcluded}`
     }
-    // console.log('tags to exclud efetch: ', tagsExcludeFetch)
-    // console.log('tags fetch: ', tagsFetch)
 
     const routine = await fetchRoutine(tagsFetch, category, tagsExcludeFetch)
 

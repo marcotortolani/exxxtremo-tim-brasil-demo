@@ -55,8 +55,8 @@ export default async function Home() {
       {/* <SectionHealthyLife  /> */}
       {/* <SectionRecommended /> */}
       {/* <SectionSports /> */}
-      {/* <ColectionsSeries title="VIDA SALUDABLE" cat="vida-saludable" /> */}
-      {/* <ColectionsSeries title="Descubre Deportes" cat="deportes" /> */}
+      {/* <ColectionsSeries title="VIDA SALUDABLE" cat='healthy-lifestyle' /> */}
+      {/* <ColectionsSeries title="Descubre Deportes" cat="sports" /> */}
       <div className="w-full h-[6rem] md:h-[10rem] "></div>
     </main>
   )

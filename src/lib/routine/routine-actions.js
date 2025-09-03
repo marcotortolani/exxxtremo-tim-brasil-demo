@@ -7,8 +7,17 @@ import {
 } from '@/lib/routine/routine-utils'
 
 export const fetchFullBodyData = async (tags = '', tagsExclude = '') => {
-  const slugLowerBody = `/posts?per_page=${50}&categories=84&tags=${tags}&tags_exclude=${tagsExclude}`
-  const slugUpperBody = `/posts?per_page=${50}&categories=83&tags=${tags}&tags_exclude=${tagsExclude}`
+  let slugLowerBody = `/posts?per_page=${50}&categories=84`
+  let slugUpperBody = `/posts?per_page=${50}&categories=83`
+
+  if (tags.length) {
+    slugLowerBody = slugLowerBody + '&tags=' + tags
+    slugUpperBody = slugUpperBody + '&tags=' + tags
+  }
+  if (tagsExclude.length) {
+    slugLowerBody = slugLowerBody + '&tags_exclude=' + tagsExclude
+    slugUpperBody = slugUpperBody + '&tags_exclude=' + tagsExclude
+  }
 
   let lowerBodyExercises
   let upperBodyExercises
@@ -38,7 +47,13 @@ export const fetchNotFullBodyData = async (slug) => {
 }
 
 export const fetchRoutine = async (tags = '', category, tagsExclude = '') => {
-  const slug = `/posts?per_page=${50}&categories=${category}&tags=${tags}&tags_exclude=${tagsExclude}`
+  let slug = `/posts?per_page=${50}&categories=${category}`
+  if (tags.length) {
+    slug = slug + '&tags=' + tags
+  }
+  if (tagsExclude.length) {
+    slug = slug + '&tags_exclude=' + tagsExclude
+  }
 
   let routines
   try {

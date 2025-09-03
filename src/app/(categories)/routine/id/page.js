@@ -65,7 +65,7 @@ export default function Page() {
 
   const { groupsRoutines, setGroupsRoutines, stateRoutines, setStateRoutines } =
     useContext(StateContext)
-  const [level, setLevel] = useState(1) // 1:begginer, 2:intermediate, 3:advanced
+  const [level, setLevel] = useState(1) // 1:beginner, 2:intermediate, 3:advanced
   const [groupName, setGroupName] = useState('')
   const [routine, setRoutine] = useState({})
   const [totalTime, setTotalTime] = useState(0) // expressed in seconds
@@ -77,7 +77,7 @@ export default function Page() {
   function formatLevel(level) {
     switch (level) {
       case 1:
-        return 'begginer'
+        return 'beginner'
       case 2:
         return 'intermediate'
       case 3:
@@ -218,7 +218,7 @@ export default function Page() {
         </h1>
         <div className="flex justify-around w-full  mx-auto">
           <ButtonLevel
-            name={dictionary['Begginer']}
+            name={dictionary['Beginner']}
             onClick={() => handleLevel(1)}
             active={level === 1}
           />

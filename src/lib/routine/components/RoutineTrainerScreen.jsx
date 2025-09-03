@@ -14,8 +14,8 @@ export const RoutineTrainerScreen = ({ onHandleBack, onHandleSuccess }) => {
   const { callback } = useRoutineWeek()
 
   const trainers = [
-    { id: TAGS['entrenador'], name: dictionary['Trainer (male)'] },
-    { id: TAGS['entrenadora'], name: dictionary['Trainer (female)'] },
+    { id: TAGS['trainer-male'], name: 'trainer-male' },
+    { id: TAGS['trainer-female'], name: 'trainer-female' },
   ]
 
   return (
@@ -55,7 +55,9 @@ export const RoutineTrainerScreen = ({ onHandleBack, onHandleSuccess }) => {
                       active ? '  ' : 'bg-DarkGray'
                     }  w-6 h-6 border-DarkGray border-4 rounded-full transition-all duration-150 ease-in-out`}
                   ></div>
-                  {trainer?.name}
+                  {trainer?.name.includes('female')
+                    ? dictionary['trainer (female)']
+                    : dictionary['trainer (male)']}
                 </button>
               )
             })

@@ -12,13 +12,13 @@ import { CATEGORIES } from '@/lib/constants'
 import { getNewData } from '@/services/api-content'
 
 export default async function Page() {
-  const categoriesReq = [CATEGORIES['nutricion'], CATEGORIES['zumba']]
+  const categoriesReq = [CATEGORIES['nutrition'], CATEGORIES['zumba']]
   const { data } = await getNewData(
     `/posts?per_page=14&categories=${categoriesReq}`,
   )
 
   // const { data: trainers } = await getNewData(
-  //   `/categories?per_page=50&parent=${CATEGORIES['entrenadores']}`,
+  //   `/categories?per_page=50&parent=${CATEGORIES['trainers']}`,
   // )
 
   return (
@@ -35,7 +35,7 @@ export default async function Page() {
         </h1>
         <ShareSocialMedia
           title={dictionary['Trainers']}
-          category="Entrenadores"
+          category="trainers"
         />
       </div>
       <div className=" w-full h-fit grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">

@@ -22,25 +22,25 @@ export function SectionMuscularGroups() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-4 lg:gap-6 ">
         <ButtonMusc
           name={dictionary['Chest']}
-          href="/training/pecho"
+          href="/training/chest"
           iconActive={ChestActive}
           iconInactive={ChestInactive}
         />
         <ButtonMusc
           name={dictionary['Arms & Shoulders']}
-          href="/training/brazos-y-hombros"
+          href="/training/arms-and-shoulders"
           iconActive={ArmsActive}
           iconInactive={ArmsInactive}
         />
         <ButtonMusc
           name={dictionary['Glutes & Legs']}
-          href="/training/gluteos-y-piernas"
+          href="/training/glutes-and-legs"
           iconActive={LegsActive}
           iconInactive={LegsInactive}
         />
         <ButtonMusc
           name={dictionary['Abs']}
-          href="/training/abdominales"
+          href="/training/abs"
           iconActive={AbsActive}
           iconInactive={AbsInactive}
         />

@@ -3,7 +3,7 @@ import { getNewData } from '@/services/api-content'
 import SliderRecommended from './SliderRecommended'
 
 export default async function SectionRecommended({ dataCategories }) {
-  const categoriesReq = ['nutricion', 'vida-saludable', 'deportes']
+  const categoriesReq = ['nutrition', 'healthy-lifestyle', 'sports']
   const categoriesFiltered = await dataCategories
     ?.filter((category) => categoriesReq.includes(category.slug))
     .map((item) => item.id)

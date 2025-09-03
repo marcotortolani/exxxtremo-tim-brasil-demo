@@ -24,7 +24,10 @@ export default function page() {
 
   useEffect(() => {
     if (!apiCategories) return
-    const categoriesReq = [CATEGORIES['vida-saludable'], CATEGORIES['deportes']]
+    const categoriesReq = [
+      CATEGORIES['healthy-lifestyle'],
+      CATEGORIES['sports'],
+    ]
     const getData = async () => {
       const res = await getNewData(
         `/posts?per_page=10&categories=${categoriesReq}`,
@@ -39,7 +42,7 @@ export default function page() {
     if (!apiCategories) return
 
     const categoriesFiltered = apiCategories
-      ?.filter((category) => category.slug === 'nutricion')
+      ?.filter((category) => category.slug === 'nutrition')
       .map((item) => item.id)
     const catString = categoriesFiltered.join(',')
     const slug = `/posts?per_page=20&page=${page}&categories=${catString}`

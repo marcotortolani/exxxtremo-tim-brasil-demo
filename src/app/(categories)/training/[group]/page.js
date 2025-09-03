@@ -62,11 +62,11 @@ export default function Page() {
     ...TRAINING_OPTIONS,
     ...[
       {
-        value: TAGS['entrenador'],
+        value: TAGS['trainer-male'],
         label: dictionary['Trainer (male)'],
       },
       {
-        value: TAGS['entrenadora'],
+        value: TAGS['trainer-female'],
         label: dictionary['Trainer (female)'],
       },
     ],

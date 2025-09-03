@@ -11,10 +11,10 @@ import logo from '/public/assets/img/logo.svg'
 export default function Footer() {
   const path = usePathname()
 
-  if (path.includes('/shorts')) {
+  if (path.includes('/shorts') || path.includes('/routine')) {
     return null
   }
-  
+
   return (
     <footer
       className={` z-20 w-full min-h-[160px] max-h-[250px] py-4 mb-16 bg-Primary  flex flex-col items-center justify-around gap-2`}

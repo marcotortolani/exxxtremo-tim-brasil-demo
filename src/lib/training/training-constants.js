@@ -10,15 +10,15 @@ export const TRAINING_OPTIONS = [
 export const LEVEL_OPTIONS = [
   {
     value: 1,
-    name: dictionary['Beginner'],
+    name: 'Beginner',
   },
   {
     value: 2,
-    name: dictionary['Intermediate'],
+    name: 'Intermediate',
   },
   {
     value: 3,
-    name: dictionary['Advanced'],
+    name: 'Advanced',
   },
 ]
 
@@ -37,8 +37,8 @@ export const EXERCISE_STORE_INITIAL = {
 }
 
 export const TRAINING_INITIAL = {
-  pecho: undefined,
-  'brazos-y-hombros': undefined,
-  'gluteos-y-piernas': undefined,
-  abdominales: undefined,
+  chest: undefined,
+  'arms-and-shoulders': undefined,
+  'glutes-and-legs': undefined,
+  abs: undefined,
 }

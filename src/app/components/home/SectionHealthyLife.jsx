@@ -5,7 +5,7 @@ import SliderHealthyLife from './SliderHealthyLife'
 import { CATEGORIES } from '@/lib/constants'
 
 export default async function SectionHealthyLife() {
-  const catName = 'vida-saludable'
+  const catName = 'healthy-lifestyle'
 
   const { data } = await getNewData(
     `/posts?per_page=10&categories=${CATEGORIES[catName]}`,

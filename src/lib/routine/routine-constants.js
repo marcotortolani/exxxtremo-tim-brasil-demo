@@ -5,47 +5,47 @@ export const ROUTINE_PROFILE = {
     {
       name: dictionary['Improve fitness'],
       id: 1,
-      tag: 'mejorar-forma-fisica',
+      tag: 'improve-fitness',
       active: false,
     },
     {
       name: dictionary['Improve endurance'],
       id: 2,
-      tag: 'mejorar-resistencia',
+      tag: 'improve-endurance',
       active: false,
     },
     {
       name: dictionary['Reduce stress'],
       id: 3,
-      tag: 'reducir-stress',
+      tag: 'reduce-stress',
       active: false,
     },
     {
       name: dictionary['Lose weight'],
       id: 4,
-      tag: 'perder-peso',
+      tag: 'lose-weight',
       active: false,
     },
     {
       name: dictionary['Gain muscle'],
       id: 5,
-      tag: 'ganar-musculo',
+      tag: 'gain-muscle',
       active: false,
     },
   ],
   levels: [
     {
-      name: dictionary['Beginner'],
+      name: 'Beginner',
       id: 1,
       active: true,
     },
     {
-      name: dictionary['Intermediate'],
+      name: 'Intermediate',
       id: 2,
       active: false,
     },
     {
-      name: dictionary['Advanced'],
+      name: 'Advanced',
       id: 3,
       active: false,
     },
@@ -54,19 +54,19 @@ export const ROUTINE_PROFILE = {
     {
       name: dictionary['Upper body'],
       id: 1,
-      category: 'tren-superior',
+      category: 'upper-body',
       active: false,
     },
     {
       name: dictionary['Lower body'],
       id: 2,
-      category: 'tren-inferior',
+      category: 'lower-body',
       active: false,
     },
     {
       name: dictionary['Full body'],
       id: 3,
-      category: 'entrenamientos',
+      category: 'workouts',
       active: false,
     },
   ],
@@ -76,8 +76,8 @@ export const ROUTINE_PROFILE = {
 }
 
 export const TRAINER_TYPE = {
-  male: dictionary['trainer (male)'],
-  female: dictionary['trainer (female)'],
+  male: 'trainer-male',
+  female: 'trainer-female',
 }
 
 export const DAYS = [

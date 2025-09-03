@@ -4,7 +4,7 @@ import { getNewData } from '@/services/api-content'
 import { CATEGORIES, TAGS } from '@/lib/constants'
 
 export default async function SectionPreTraining() {
-  const catName = 'estiramientos-y-calentamientos'
+  const catName = 'stretches-and-warm-ups'
 
   const { data } = await getNewData(
     `/posts?per_page=10&categories=${CATEGORIES[catName]}&tags=${TAGS['video']}`,

@@ -65,10 +65,10 @@ export const RoutineExerciseSectionDialog = () => {
     if (!apiCategories) return
 
     const muscularGroups = [
-      'pecho',
-      'brazos-y-hombros',
-      'gluteos-y-piernas',
-      'abdominales',
+      'chest',
+      'arms-and-shoulders',
+      'glutes-and-legs',
+      'abs',
     ]
 
     const categoriesFiltered = apiCategories?.filter((category) =>

@@ -1,16 +1,15 @@
-'use client';
-import React, { createContext, useEffect } from 'react';
-import useLocalStorage from '@/hooks/useLocalStorage';
-import { getNewData } from '@/services/api-content';
+'use client'
+import React, { createContext, useEffect } from 'react'
+import useLocalStorage from '@/hooks/useLocalStorage'
+import { getNewData } from '@/services/api-content'
 
-import { GROUPS_TRAINING } from '@/utils/static_data';
-import { USER_DATA_INITIAL } from '@/lib/constants';
+import { USER_DATA_INITIAL } from '@/lib/constants'
 import { ROUTINE_PROFILE } from '@/lib/routine/routine-constants'
 
-const StateContext = createContext();
-const favouritePostsInitial = [];
+import { PRODUCT_NAME } from '@/config/config'
 
-
+const StateContext = createContext()
+const favouritePostsInitial = []
 
 export const userStateRoutineInitial = [
   {
@@ -349,13 +348,12 @@ export const userStateRoutineInitial = [
       },
     ],
   },
-];
-
+]
 
 export const stateDayTrainingInitial = {
-  pecho: {
+  chest: {
     id: 1,
-    group: 'pecho',
+    group: 'chest',
     block: [
       {
         id: 1,
@@ -379,9 +377,9 @@ export const stateDayTrainingInitial = {
       },
     ],
   },
-  'brazos-y-hombros': {
+  'arms-and-shoulders': {
     id: 2,
-    group: 'brazos-y-hombros',
+    group: 'arms-and-shoulders',
     block: [
       {
         id: 1,
@@ -405,9 +403,9 @@ export const stateDayTrainingInitial = {
       },
     ],
   },
-  'gluteos-y-piernas': {
+  'glutes-and-legs': {
     id: 3,
-    group: 'gluteos-y-piernas',
+    group: 'glutes-and-legs',
     block: [
       {
         id: 1,
@@ -431,9 +429,9 @@ export const stateDayTrainingInitial = {
       },
     ],
   },
-  abdominales: {
+  abs: {
     id: 4,
-    group: 'abdominales',
+    group: 'abs',
     block: [
       {
         id: 1,
@@ -457,70 +455,68 @@ export const stateDayTrainingInitial = {
       },
     ],
   },
-};
-
+}
 
 function StateProvider({ children }) {
   /*  API TAGS & CATEGORIES */
-  const [apiTags, setApiTags] = useLocalStorage('apiTags', []);
-  const [apiCategories, setApiCategories] = useLocalStorage('apiCategories', []);
+  const [apiTags, setApiTags] = useLocalStorage(`apiTags-${PRODUCT_NAME}`, [])
+  const [apiCategories, setApiCategories] = useLocalStorage(
+    `apiCategories-${PRODUCT_NAME}`,
+    [],
+  )
   const [chatbotOpened, setChatbotOpened] = useLocalStorage(
-    'chatbotOpened',
+    `chatbotOpened-${PRODUCT_NAME}`,
     false,
-  );
-
+  )
 
   useEffect(() => {
     //if (apiTags?.length || apiCategories?.length) return
 
     const fetchData = async () => {
       try {
-        const tags = await getNewData('/tags?per_page=50');
-        const categories = await getNewData('/categories?per_page=50');
-        setApiTags(tags?.data);
-        setApiCategories(categories?.data);
+        const tags = await getNewData('/tags?per_page=50')
+        const categories = await getNewData('/categories?per_page=50')
+        setApiTags(tags?.data)
+        setApiCategories(categories?.data)
       } catch (err) {
-        console.error('Error fetching data:', err);
+        console.error('Error fetching data:', err)
       }
-    };
-    fetchData();
+    }
+    fetchData()
 
     // getNewData('/tags?per_page=50').then((res) => setApiTags(res?.data))
     // getNewData('/categories?per_page=50').then((res) =>
     //   setApiCategories(res?.data)
     // )
-  }, []);
+  }, [])
 
   const [favouritePosts, setFavouritePosts] = useLocalStorage(
-    'userFavouritePosts',
+    `userFavouritePosts-${PRODUCT_NAME}`,
     [],
-  );
+  )
 
   /* LS USER DATA */
-  const [userData, setUserData] = useLocalStorage('userData', []);
-  /* LS USER DATA */
-
-  const [groupsTraining, setGroupsTraining] = useLocalStorage(
-    'userGroupsTraining',
+  const [userData, setUserData] = useLocalStorage(
+    `userData-${PRODUCT_NAME}`,
     [],
-  );
-
+  )
+  /* LS USER DATA */
 
   /* LS DATA USER ROUTINES */
   const [userRoutineProfile, setUserRoutineProfile] = useLocalStorage(
-    'userRoutineProfile',
+    `userRoutineProfile-${PRODUCT_NAME}`,
     [],
-  );
+  )
   const [stateRoutine, setStateRoutine] = useLocalStorage(
-    'userStateRoutine',
+    `userStateRoutine-${PRODUCT_NAME}`,
     [],
-  );
+  )
   /* LS DATA USER ROUTINES */
 
   const [userWeekRoutine, setUserWeekRoutine] = useLocalStorage(
-    'userWeekRoutine',
+    `userWeekRoutine-${PRODUCT_NAME}`,
     [],
-  );
+  )
 
   const stateValues = {
     favouritePosts,
@@ -531,46 +527,38 @@ function StateProvider({ children }) {
     setUserRoutineProfile,
     stateRoutine,
     setStateRoutine,
-    groupsTraining,
-    setGroupsTraining,
     apiTags,
     apiCategories,
     userWeekRoutine,
     setUserWeekRoutine,
     chatbotOpened,
     setChatbotOpened,
-  };
+  }
 
   /* Setting initial data */
   useEffect(() => {
     if (!favouritePosts.length) {
-      setFavouritePosts(favouritePostsInitial);
+      setFavouritePosts(favouritePostsInitial)
     }
     if (!userData.length) {
-      setUserData(USER_DATA_INITIAL);
+      setUserData(USER_DATA_INITIAL)
     }
-    if (!groupsTraining.length) {
-      setGroupsTraining(GROUPS_TRAINING);
-    }
-
-
 
     if (!userRoutineProfile.length) {
-      setUserRoutineProfile(ROUTINE_PROFILE);
+      setUserRoutineProfile(ROUTINE_PROFILE)
     }
 
     if (!stateRoutine.length) {
-      setStateRoutine(userStateRoutineInitial);
+      setStateRoutine(userStateRoutineInitial)
     }
-    // TODO: modificar esto
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [])
 
   return (
     <StateContext.Provider value={stateValues}>
       {stateValues ? children : null}
     </StateContext.Provider>
-  );
+  )
 }
 
-export { StateContext, StateProvider };
+export { StateContext, StateProvider }

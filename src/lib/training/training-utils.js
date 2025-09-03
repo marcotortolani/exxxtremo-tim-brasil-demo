@@ -16,8 +16,8 @@ export const getRoutine = (
   tags = [],
   EXERCISES_PER_DAY = 6,
 ) => {
-  const tagIntermediate = getTagBySlug(tags, 'intermedio')
-  const tagAdvanced = getTagBySlug(tags, 'avanzado')
+  const tagIntermediate = getTagBySlug(tags, 'intermediate')
+  const tagAdvanced = getTagBySlug(tags, 'advanced')
 
   let data = []
   const exercisesBeginner = exercises.filter((item) =>
@@ -34,7 +34,7 @@ export const getRoutine = (
 
   switch (level) {
     case 2:
-      // Si no hay suficientes ejercicios intermedios, complementa con básicos
+      // Si no hay suficientes ejercicios intermediates, complementa con básicos
       data = [...shuffle(exercisesIntermediate).slice(0, EXERCISES_PER_DAY)]
 
       if (exercisesIntermediate.length < EXERCISES_PER_DAY) {
@@ -109,19 +109,19 @@ export const getTagsAndTagsExcludedByLevel = ({ level, apiTags }) => {
 
   if (level === 1) {
     tagsExclude = apiTags
-      ?.filter((tag) => tag.name === 'intermedio' || tag.name === 'avanzado')
+      ?.filter((tag) => tag.name === 'intermediate' || tag.name === 'advanced')
       .map((tag) => tag.id)
       .join(',')
   } else {
     tags = apiTags
-      ?.filter((tag) => tag.name === 'intermedio' || tag.name === 'avanzado')
+      ?.filter((tag) => tag.name === 'intermediate' || tag.name === 'advanced')
       .map((tag) => tag.id)
       .join(',')
   }
-  // TODO: descomentar cuando el nivel "intermedio" tenga rutinas propias
+  // TODO: descomentar cuando el nivel "intermediate" tenga rutinas propias
   // if (level === 2) {
   //   tagsExclude = apiTags
-  //     ?.filter((tag) => tag.name === 'avanzado')
+  //     ?.filter((tag) => tag.name === 'advanced')
   //     .map((tag) => tag.id)
   //     .join(',')
   // }
@@ -134,7 +134,7 @@ export const getTagsAndTagsExcludedByLevel = ({ level, apiTags }) => {
 
 export const getTrainerIDToExclude = (apiTags, trainer) => {
   return apiTags
-    ?.filter((tag) => tag.name.includes('entrenador') && tag.id !== trainer)
+    ?.filter((tag) => tag.name.includes('trainer-male') && tag.id !== trainer)
     .map((tag) => tag.id)
     .join(',')
 }

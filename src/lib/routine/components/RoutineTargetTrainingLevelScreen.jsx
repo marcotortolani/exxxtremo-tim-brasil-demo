@@ -66,7 +66,7 @@ export const RoutineTargetTrainingLevelScreen = ({
         </div>
 
         <p className=" w-1/2 text-center py-3 bg-LightGray rounded-xl text-xl text-Primary font-oswaldSemBold uppercase">
-          {profile.levels.find((level) => level.active)?.name}
+          {dictionary[profile.levels.find((level) => level.active)?.name]}
         </p>
       </div>
 

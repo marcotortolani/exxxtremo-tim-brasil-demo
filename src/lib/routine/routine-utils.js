@@ -60,12 +60,14 @@ export const getTrainerIDToExclude = (apiTags, trainer) => {
   // buscar en apiTags todos los tags que coincidan con TRAINER_TYPE.male y TRAINER_TYPE.female
   const trainers = apiTags?.filter(
     (item) =>
-      item.name === TRAINER_TYPE.male || item.name === TRAINER_TYPE.female,
+      item.slug === TRAINER_TYPE.male || item.slug === TRAINER_TYPE.female,
   )
+
   // comparar los tags con el trainer seleccionado y obtener los id opuestos no seleccionados
   const trainerIDToExclude = trainers
     ?.filter((tag) => tag.id !== trainer)
     .map((tag) => tag.id)
+
   return trainerIDToExclude
 }
 

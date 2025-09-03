@@ -71,8 +71,8 @@ export default async function PagePost({ slug, children, catSlug = '' }) {
 
       <ContentRecommended
         categoriesReq={[
-          `${CATEGORIES.nutricion}`,
-          `${CATEGORIES.deportes}`,
+          `${CATEGORIES.nutrition}`,
+          `${CATEGORIES.sports}`,
           `${CATEGORIES.zumba}`,
         ]}
       />

@@ -24,7 +24,7 @@ export default function page() {
 
   useEffect(() => {
     if (!apiCategories) return
-    const categoriesReq = [CATEGORIES['nutricion'], CATEGORIES['entrenadores']]
+    const categoriesReq = [CATEGORIES['nutrition'], CATEGORIES['trainers']]
     const getData = async () => {
       const res = await getNewData(
         `/posts?per_page=10&categories=${categoriesReq}`,

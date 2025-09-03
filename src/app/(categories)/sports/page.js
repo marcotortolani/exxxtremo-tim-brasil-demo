@@ -24,7 +24,7 @@ export default function page() {
     if (!apiCategories) return
 
     const categoriesFiltered = apiCategories
-      ?.filter((category) => category.slug === 'deportes')
+      ?.filter((category) => category.slug === 'sports')
       .map((item) => item.id)
     const catString = categoriesFiltered.join(',')
     const slug = `/posts?per_page=20&page=${page}&categories=${catString}`
@@ -111,7 +111,7 @@ export default function page() {
         </button>
       </div>
 
-      {/* <SliderRecommended categoriesReq={['vida-saludable', 'nutricion']} /> */}
+      {/* <SliderRecommended categoriesReq={['healthy-lifestyle', 'nutrition']} /> */}
       <div className="w-full h-10 md:h-20"></div>
     </main>
   )
