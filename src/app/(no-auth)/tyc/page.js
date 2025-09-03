@@ -17,191 +17,191 @@ export default async function Page() {
     >
       <div className=" relative w-full lg:max-w-4xl flex flex-col items-center gap-8">
         <section className="w-full flex flex-col gap-4">
-          <TitleStyled>Términos y Condiciones</TitleStyled>
+          <TitleStyled>Termos e Condições</TitleStyled>
           <ParagraphStyled>
-            En este documento se establecen los términos y condiciones que
-            regulan el uso del servicio denominado “Total Fitness” (en adelante
-            el “Servicio” o la “Opción de entretenimiento”) ofrecido por MOOB
-            MEDIA BUSINESS, C.A (el “Prestador”), por medio de las cuales los
-            usuarios de XXXXXX – (en adelante la “Operadora”) podrán acceder
-            desde su dispositivo móvil, Tablet, laptop o PC, a contenido
-            dedicado de fitness, donde podrá disfrutar de novedades, videos,
-            rutinas y tips de personal trainers.
+            Neste documento são estabelecidos os termos e condições que regulam
+            o uso do serviço denominado "Total Fitness" (doravante o "Serviço"
+            ou a "Opção de entretenimento") oferecido pela MOOB MEDIA BUSINESS,
+            C.A (o "Prestador"), por meio das quais os usuários de XXXXXX –
+            (doravante a "Operadora") poderão acessar desde seu dispositivo
+            móvel, Tablet, laptop ou PC, a conteúdo dedicado de fitness, onde
+            poderá desfrutar de novidades, vídeos, rotinas e dicas de personal
+            trainers.
           </ParagraphStyled>
         </section>
         <section className=" w-full flex flex-col gap-4">
-          <Title2Styled>EL SERVICIO: Total Fitness</Title2Styled>
+          <Title2Styled>O SERVIÇO: Total Fitness</Title2Styled>
           <ParagraphStyled>
-            Total Fitness es un servicio de entretenimiento que permite acceder
-            al cliente, a través de un celular, Tablet o computadora, a
-            contenido de fitness, donde podrá disfrutar de novedades, videos,
-            rutinas y tips de personal trainers, en las condiciones que se
-            detallan en estos Términos y Condiciones.
+            Total Fitness é um serviço de entretenimento que permite ao cliente
+            acessar, através de um celular, Tablet ou computador, conteúdo de
+            fitness, onde poderá desfrutar de novidades, vídeos, rotinas e dicas
+            de personal trainers, nas condições que se detalham nestes Termos e
+            Condições.
           </ParagraphStyled>
           <ParagraphStyled>
-            En tal sentido, todos aquellos clientes XXXXX que así lo deseen
-            podrán suscribirse solicitando su alta en la opción de
-            entretenimiento mediante el envío de un SMS con el comando que se
-            considere como válido para tal acción al número XXXX (el precio del
-            mensaje es equivalente a un mensaje de texto por uso).
+            Nesse sentido, todos aqueles clientes XXXXX que assim desejarem
+            poderão se inscrever solicitando sua ativação na opção de
+            entretenimento mediante o envio de um SMS com o comando que se
+            considere como válido para tal ação ao número XXXX (o preço da
+            mensagem é equivalente a uma mensagem de texto por uso).
           </ParagraphStyled>
           <ParagraphStyled>
-            Al enviar la palabra{' '}
+            Ao enviar a palavra{' '}
             <span className=" font-semibold">
-              ALTA, o el comando que se comunique para esta acción, al número
+              ATIVAR, ou o comando que se comunique para esta ação, ao número
               XXXX
             </span>
-            , el cliente recibirá un SMS con el enlace e instrucciones de acceso
-            al portal, precio del servicio, frecuencia de cobro y un pin para
-            acceder a la opción de entretenimiento. Una vez que ingresa, podrá
-            disfrutar sin límites de todo el contenido que ofrece Total Fitness.
-            Los cargos por navegación y transmisión de datos no están incluidos
-            en el servicio. Los usuarios también podrán suscribirse a través de
-            la página web de XXXXX, en la sección opciones de entretenimiento
-            digital, seleccionando la opción de Total Fitness, a través del URL
-            propio del servicio{' '}
+            , o cliente receberá um SMS com o link e instruções de acesso ao
+            portal, preço do serviço, frequência de cobrança e um pin para
+            acessar a opção de entretenimento. Uma vez que ingresse, poderá
+            desfrutar sem limites de todo o conteúdo que oferece o Total
+            Fitness. As taxas por navegação e transmissão de dados não estão
+            incluídas no serviço. Os usuários também poderão se inscrever
+            através da página web de XXXXX, na seção opções de entretenimento
+            digital, selecionando a opção de Total Fitness, através da URL
+            própria do serviço{' '}
             <Link className=" text-sky-600 " href="/" target="_blank">
               Total Fitness
             </Link>{' '}
-            o desde cualquier otra sección que la operadora disponga para ello.
+            ou desde qualquer outra seção que a operadora disponha para isso.
           </ParagraphStyled>
           <ParagraphStyled>
-            El Servicio es prestado mediante la modalidad de suscripción de
-            renovación diaria, es decir, en forma continua desde la activación
-            del servicio por parte del usuario, y hasta el momento en el que
-            este desea solicitar la desactivación del servicio. Para darse de
-            baja el usuario debe enviar la palabra{' '}
-            <span className=" font-semibold">BAJA al número XXXX</span> y este
-            recibirá un mensaje de confirmación.
+            O Serviço é prestado mediante a modalidade de assinatura de
+            renovação diária, ou seja, de forma contínua desde a ativação do
+            serviço por parte do usuário, e até o momento em que este deseja
+            solicitar a desativação do serviço. Para cancelar a assinatura o
+            usuário deve enviar a palavra{' '}
+            <span className=" font-semibold">CANCELAR ao número XXXX</span> e
+            este receberá uma mensagem de confirmação.
           </ParagraphStyled>
           <ParagraphStyled>
-            Es requisito indispensable para la utilización de la suscripción que
-            el usuario posea los servicios SMS y datos móviles o WiFi activados,
-            un teléfono móvil compatible y correctamente configurado. Los
-            usuarios deberán comprobar estos aspectos en forma previa a la
-            solicitud del servicio.
+            É requisito indispensável para a utilização da assinatura que o
+            usuário possua os serviços SMS e dados móveis ou WiFi ativados, um
+            telefone móvel compatível e corretamente configurado. Os usuários
+            deverão comprovar estes aspectos de forma prévia à solicitação do
+            serviço.
           </ParagraphStyled>
           <ParagraphStyled>
-            Total Fitness enviará desde el número XXXX un mensaje de texto con
-            la información de acceso al portal y el precio al menos una vez al
-            mes. Adicionalmente, Total Fitness, enviará al usuario mensajes de
-            texto con información relevante en los periodos donde se efectúen
-            sorteos, premiaciones y/o actividades de interés para el segmento.
+            Total Fitness enviará do número XXXX uma mensagem de texto com a
+            informação de acesso ao portal e o preço pelo menos uma vez por mês.
+            Adicionalmente, Total Fitness enviará ao usuário mensagens de texto
+            com informação relevante nos períodos onde se efetuem sorteios,
+            premiações e/ou atividades de interesse para o segmento.
           </ParagraphStyled>
           <ParagraphStyled>
-            El uso del Servicio estará sujeto a la aceptación y cumplimiento de
-            los presentes Términos y Condiciones, que se da desde el momento que
-            el cliente se suscribe al servicio. También resultarán aplicables
-            todas aquellas condiciones particulares, avisos o instrucciones de
-            funcionamiento que se pongan en conocimiento del usuario a través de
-            la página web de XXXXX o del Prestador, con relación al Servicio.
-          </ParagraphStyled>
-        </section>
-        <section className=" w-full flex flex-col gap-4">
-          <Title2Styled>Alcance del servicio</Title2Styled>
-          <ParagraphStyled>
-            El Servicio está disponible en toda España, para toda persona física
-            capaz de contratar, cuya línea telefónica móvil se encuentre activa
-            al momento de solicitud de ALTA al mismo.
-          </ParagraphStyled>
-          <ParagraphStyled>
-            El contenido estará disponible para ser visualizado por el usuario,
-            a partir del momento en que éste realice exitosamente su alta. El
-            contenido podrá ser visualizado desde cualquier terminal compatible,
-            requiriendo datos móviles o una conexión WiFi para ello.
-          </ParagraphStyled>
-          <ParagraphStyled>
-            Todo Usuario que se suscriba al servicio y efectúe los pasos de
-            autenticación necesarios, declara y garantiza dar pleno cumplimiento
-            a los presentes Términos y Condiciones.
+            O uso do Serviço estará sujeito à aceitação e cumprimento dos
+            presentes Termos e Condições, que se dá desde o momento que o
+            cliente se inscreve no serviço. Também resultarão aplicáveis todas
+            aquelas condições particulares, avisos ou instruções de
+            funcionamento que se ponham em conhecimento do usuário através da
+            página web de XXXXX ou do Prestador, com relação ao Serviço.
           </ParagraphStyled>
         </section>
         <section className=" w-full flex flex-col gap-4">
-          <Title2Styled>Condiciones de uso. Propiedad intelectual</Title2Styled>
+          <Title2Styled>Alcance do serviço</Title2Styled>
           <ParagraphStyled>
-            Los usuarios se obligan a realizar un uso lícito del Servicio y al
-            contenido al que accedan como consecuencia de la Suscripción, de
-            conformidad con la ley vigente aplicable y los presentes Términos y
-            Condiciones. Corresponde a los Usuarios respetar las normas
-            mencionadas, poniendo especial énfasis en los derechos de propiedad
-            intelectual e industrial, y abstenerse de utilizar el Servicio con
-            fines ilícitos o de tal forma que atenten o vulneren derechos de
-            terceros o del Prestador. Los Usuarios serán exclusivos responsables
-            de los daños o perjuicios de cualquier naturaleza que pudieren
-            derivarse del uso incorrecto, ilegítimo o ilícito del Servicio.
+            O Serviço está disponível em todo o Brasil, para toda pessoa física
+            capaz de contratar, cuja linha telefônica móvel se encontre ativa no
+            momento de solicitação de ATIVAÇÃO do mesmo.
           </ParagraphStyled>
           <ParagraphStyled>
-            El Prestador es único titular del contenido, y/o ha recibido de los
-            respectivos titulares de dicho contenido una licencia de uso. Todo
-            el contenido que compone la Suscripción está protegido por derechos
-            de autor en el marco de la normativa vigente. El contenido puede ser
-            utilizado por los Usuarios sólo en la medida permitida por estos
-            Términos y Condiciones y la legislación aplicable.
+            O conteúdo estará disponível para ser visualizado pelo usuário, a
+            partir do momento em que este realize com sucesso sua ativação. O
+            conteúdo poderá ser visualizado desde qualquer terminal compatível,
+            requerendo dados móveis ou uma conexão WiFi para isso.
           </ParagraphStyled>
           <ParagraphStyled>
-            A menos que se especifique expresamente lo contrario, el contenido
-            no podrá ser descargado a los dispositivos de los usuarios.
+            Todo Usuário que se inscreva no serviço e efetue os passos de
+            autenticação necessários, declara e garante dar pleno cumprimento
+            aos presentes Termos e Condições.
           </ParagraphStyled>
         </section>
         <section className=" w-full flex flex-col gap-4">
-          <Title2Styled>Responsabilidad</Title2Styled>
+          <Title2Styled>Condições de uso. Propriedade intelectual</Title2Styled>
           <ParagraphStyled>
-            La responsabilidad y obligación de pago por el envío o recepción de
-            mensajes de texto relacionados a la Suscripción será responsabilidad
-            del titular del número móvil utilizado a tal fin, y no podrá
-            oponerse por{' '}
+            Os usuários se obrigam a realizar um uso lícito do Serviço e do
+            conteúdo ao qual acessem como consequência da Assinatura, de
+            conformidade com a lei vigente aplicável e os presentes Termos e
+            Condições. Corresponde aos Usuários respeitar as normas mencionadas,
+            colocando especial ênfase nos direitos de propriedade intelectual e
+            industrial, e abster-se de utilizar o Serviço com fins ilícitos ou
+            de tal forma que atentem ou vulnerem direitos de terceiros ou do
+            Prestador. Os Usuários serão exclusivos responsáveis pelos danos ou
+            prejuízos de qualquer natureza que pudessem derivar do uso
+            incorreto, ilegítimo ou ilícito do Serviço.
+          </ParagraphStyled>
+          <ParagraphStyled>
+            O Prestador é único titular do conteúdo, e/ou recebeu dos
+            respectivos titulares de dito conteúdo uma licença de uso. Todo o
+            conteúdo que compõe a Assinatura está protegido por direitos de
+            autor no marco da normativa vigente. O conteúdo pode ser utilizado
+            pelos Usuários somente na medida permitida por estes Termos e
+            Condições e a legislação aplicável.
+          </ParagraphStyled>
+          <ParagraphStyled>
+            A menos que se especifique expressamente o contrário, o conteúdo não
+            poderá ser baixado nos dispositivos dos usuários.
+          </ParagraphStyled>
+        </section>
+        <section className=" w-full flex flex-col gap-4">
+          <Title2Styled>Responsabilidade</Title2Styled>
+          <ParagraphStyled>
+            A responsabilidade e obrigação de pagamento pelo envio ou recepção
+            de mensagens de texto relacionadas à Assinatura será
+            responsabilidade do titular do número móvel utilizado para tal fim,
+            e não poderá opor-se por{' '}
             <span className=" font-semibold">
-              pérdida, hurto, robo, extravío o avería de dicho equipo móvil
+              perda, furto, roubo, extravio ou avaria de dito equipamento móvel
             </span>
-            , salvo denuncia previa a cualquier envío o recepción de estos
-            mensajes, efectuada a la Operadora través de los centros de atención
-            de esta última.
+            , salvo denúncia prévia a qualquer envio ou recepção destas
+            mensagens, efetuada à Operadora através dos centros de atendimento
+            desta última.
           </ParagraphStyled>
           <ParagraphStyled>
-            El Prestador y la Operadora no podrán ser considerados responsables
-            por ningún daño o perjuicio ocasionado o que pudiera ocasionarse a
-            los Usuarios o a terceros, en sus personas o bienes, por la
-            contratación o utilización del Servicio. Tampoco serán responsables
-            en caso de insatisfacción por el contenido del servicio. Para estos
-            casos, los usuarios serán libres de darse de baja, enviando a
-            palabra <span className=" font-semibold">BAJA al número XXXX</span>.
+            O Prestador e a Operadora não poderão ser considerados responsáveis
+            por nenhum dano ou prejuízo ocasionado ou que pudesse ocasionar-se
+            aos Usuários ou a terceiros, em suas pessoas ou bens, pela
+            contratação ou utilização do Serviço. Tampouco serão responsáveis em
+            caso de insatisfação pelo conteúdo do serviço. Para estes casos, os
+            usuários serão livres para cancelar a assinatura, enviando a palavra{' '}
+            <span className=" font-semibold">CANCELAR ao número XXXX</span>.
           </ParagraphStyled>
           <ParagraphStyled>
-            El Prestador no se responsabiliza por aquellas Suscripciones que no
-            contengan los datos solicitados o que contengan datos erróneos ni
-            por los mensajes de texto que no incluyan las palabras claves
-            establecidas para el acceso al Servicio. Tampoco será responsable
-            por las solicitudes o envíos que no sean aceptados por la plataforma
-            tecnológica del Prestador ni por retrasos que pudieren sufrir las
-            visualizaciones de contenido, mensajes de texto o cualquier otro
-            envío relacionado con la Suscripción, por cualquier causa no
-            imputable al Prestador, incluyendo pero sin limitarse a fallas en la
-            conectividad de la red, exceso o saturación del tráfico de la red,
-            y/o cualquier característica de los teléfonos móviles que impidan la
-            transmisión de dichos envíos o solicitudes.
+            O Prestador não se responsabiliza por aquelas Assinaturas que não
+            contenham os dados solicitados ou que contenham dados errôneos nem
+            pelas mensagens de texto que não incluam as palavras chave
+            estabelecidas para o acesso ao Serviço. Tampouco será responsável
+            pelas solicitações ou envios que não sejam aceitos pela plataforma
+            tecnológica do Prestador nem por atrasos que pudessem sofrer as
+            visualizações de conteúdo, mensagens de texto ou qualquer outro
+            envio relacionado com a Assinatura, por qualquer causa não imputável
+            ao Prestador, incluindo mas sem limitar-se a falhas na conectividade
+            da rede, excesso ou saturação do tráfego da rede, e/ou qualquer
+            característica dos telefones móveis que impeçam a transmissão de
+            ditos envios ou solicitações.
           </ParagraphStyled>
           <ParagraphStyled>
-            El Prestador se reserva el derecho de efectuar sin previo aviso todo
-            tipo de modificación en la mecánica de la Suscripción con el solo
-            requisito de comunicar cualquier cambio de relevancia en la página
-            web y otros medios.
+            O Prestador se reserva o direito de efetuar sem aviso prévio todo
+            tipo de modificação na mecânica da Assinatura com o único requisito
+            de comunicar qualquer mudança de relevância na página web e outros
+            meios.
           </ParagraphStyled>
         </section>
         <section className=" w-full flex flex-col gap-4">
-          <Title2Styled>Jurisdicción</Title2Styled>
+          <Title2Styled>Jurisdição</Title2Styled>
           <ParagraphStyled>
-            Toda relación que en virtud de este Servicio se genere entre los
-            Usuarios y el Prestador será regida y concertada en total sujeción a
-            las leyes de España, renunciando los Usuarios a cualquier otra ley a
-            cuya aplicación pudiere tener derecho.
+            Toda relação que em virtude deste Serviço se gere entre os Usuários
+            e o Prestador será regida e acordada em total sujeição às leis do
+            Brasil, renunciando os Usuários a qualquer outra lei a cuja
+            aplicação pudessem ter direito.
           </ParagraphStyled>
           <ParagraphStyled>
-            Estos Términos y Condiciones se rigen por la ley de España. Para
-            cualquier controversia que pudiera derivarse de la prestación de los
-            Servicios o la interpretación y aplicación de los Términos y
-            Condiciones, el Prestador y los Usuarios aceptan someterse a los
-            tribunales competentes de España con expresa renuncia a cualquier
-            otro fuero o jurisdicción que pudiera corresponderles.
+            Estes Termos e Condições se regem pela lei do Brasil. Para qualquer
+            controvérsia que pudesse derivar da prestação dos Serviços ou a
+            interpretação e aplicação dos Termos e Condições, o Prestador e os
+            Usuários aceitam submeter-se aos tribunais competentes do Brasil com
+            expressa renúncia a qualquer outro foro ou jurisdição que pudesse
+            corresponder-lhes.
           </ParagraphStyled>
         </section>
       </div>
