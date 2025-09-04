@@ -134,7 +134,7 @@ export const getTagsAndTagsExcludedByLevel = ({ level, apiTags }) => {
 
 export const getTrainerIDToExclude = (apiTags, trainer) => {
   return apiTags
-    ?.filter((tag) => tag.name.includes('trainer-male') && tag.id !== trainer)
+    ?.filter((tag) => tag.slug.includes('trainer') && tag.id !== trainer)
     .map((tag) => tag.id)
     .join(',')
 }

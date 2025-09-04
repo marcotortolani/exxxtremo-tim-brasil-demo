@@ -30,19 +30,16 @@ export const useTraining = () => {
     async (level = 1, trainer = '', tags = '', tagsExclude = '') => {
       setIsLoading(true)
 
-      const trainerToExclude = getTrainerIDToExclude(
-        apiTags,
-        trainer,
-      )
-      const tagsToExlude = `${tagsExclude},${trainerToExclude}`
+      const trainerToExclude = getTrainerIDToExclude(apiTags, trainer)
+      const tagsToExlude = tagsExclude.length
+        ? `${tagsExclude},${trainerToExclude}`
+        : trainerToExclude
+
+      const tagsToFetch = tags.length ? `${tags},${trainer}` : trainer
 
       try {
         const category = getCategoryID(apiCategories, params.group)
-        const exercises = await fetchPosts(
-          category,
-          `${tags},${trainer}`,
-          tagsToExlude,
-        )
+        const exercises = await fetchPosts(category, tagsToFetch, tagsToExlude)
         const data = getRoutine(exercises, level, apiTags)
 
         const timer = setTimeout(() => {
@@ -59,6 +56,8 @@ export const useTraining = () => {
   )
 
   useEffect(() => {
+    if (currentTrainer === currentTraining?.trainer) return
+
     if (params && params.group && !currentTraining) {
       callPosts()
     }

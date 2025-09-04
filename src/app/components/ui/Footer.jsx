@@ -11,7 +11,11 @@ import logo from '/public/assets/img/logo.svg'
 export default function Footer() {
   const path = usePathname()
 
-  if (path.includes('/shorts') || path.includes('/routine')) {
+  if (
+    path.includes('/shorts') ||
+    path.includes('/routine') ||
+    path.includes('/training')
+  ) {
     return null
   }
 

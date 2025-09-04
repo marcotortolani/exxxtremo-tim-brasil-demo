@@ -24,7 +24,6 @@ import { RoutineWeeks } from '@/lib/routine/components/RoutineWeeks'
 import dictionary from '@/dictionary/lang.json'
 
 import { PersonMale, PersonFemale } from '@/utils/icons'
-//import { logging } from '../../../../next.config'
 
 export const RoutineScreen = () => {
   const [isExerciseTab, setIsExerciseTab] = useState(true)
@@ -48,14 +47,14 @@ export const RoutineScreen = () => {
       <div className=" w-full flex items-center justify-between gap-2">
         <div className=" flex items-center justify-between w-full">
           <div className="flex items-center gap-2">
-            <span className=" px-4 py-2 uppercase text-sm bg-Primary font-oswaldLight text-DarkGray rounded-lg ">
+            <span className=" px-2 py-2 md:px-4 uppercase text-xs md:text-sm bg-Primary font-oswaldLight text-DarkGray rounded-lg ">
               {dictionary[profile?.levels?.find((level) => level.active)?.name]}
             </span>
-            <span className=" px-4 py-2 uppercase text-sm bg-Primary font-oswaldLight text-DarkGray rounded-lg ">
+            <span className=" px-2 py-2 md:px-4 uppercase text-xs md:text-sm bg-Primary font-oswaldLight text-DarkGray rounded-lg ">
               {profile?.focusAreas?.find((area) => area.active)?.name}
             </span>
-            <div className=" h-9 pl-2 pr-2 md:pr-4 py-0.5 md:py-1 bg-Primary rounded-lg flex items-center justify-center gap-2">
-              <div className=" w-7 h-7 md:w-7 md:h-7 flex items-center justify-center ring-2 ring-DarkGray rounded-full overflow-hidden p-[0px] pt-0.5 pb-0">
+            <div className=" h-8 md:h-9 pl-2 pr-2 md:pr-4 py-0.5 md:py-1 bg-Primary rounded-lg flex items-center justify-center gap-2">
+              <div className=" w-5 h-5 md:w-7 md:h-7 flex items-center justify-center ring-2 ring-DarkGray rounded-full overflow-hidden p-[0px] pt-0.5 pb-0">
                 {profile?.trainer === TAGS['trainer-male'] ? (
                   <PersonMale fill="#363636" />
                 ) : (

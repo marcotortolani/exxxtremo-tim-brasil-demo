@@ -68,20 +68,26 @@ export const useRoutineWeek = () => {
         { tag: 'advanced' },
       ])
       tagsExcludeFetch = `${tagsExclude},${tagsIDExcluded}`
-    } else if (levelSelected === 'intermediate') {
+    }
+
+    if (levelSelected === 'intermediate') {
       const tagsIDIncluded = getTagsIDByTargets(apiTags, [
         { tag: 'intermediate' },
       ])
       tagsFetch = `${tagsIDIncluded},${tags}`
-      const tagsIDExcluded = getTagsIDByTargets(apiTags, [{ tag: 'advanced' }])
-      tagsExcludeFetch = `${tagsExclude},${tagsIDExcluded}`
-    } else if (levelSelected === 'advanced') {
+      // const tagsIDExcluded = getTagsIDByTargets(apiTags, [{ tag: 'advanced' }])
+      // tagsExcludeFetch = `${tagsExclude},${tagsIDExcluded}`
+      tagsExcludeFetch = `${tagsExclude}`
+    }
+
+    if (levelSelected === 'advanced') {
       const tagsIDIncluded = getTagsIDByTargets(apiTags, [{ tag: 'advanced' }])
       tagsFetch = `${tagsIDIncluded},${tags}`
-      const tagsIDExcluded = getTagsIDByTargets(apiTags, [
-        { tag: 'intermediate' },
-      ])
-      tagsExcludeFetch = `${tagsExclude},${tagsIDExcluded}`
+      // const tagsIDExcluded = getTagsIDByTargets(apiTags, [
+      //   { tag: 'intermediate' },
+      // ])
+      // tagsExcludeFetch = `${tagsExclude},${tagsIDExcluded}`
+      tagsExcludeFetch = `${tagsExclude}`
     }
 
     const routine = await fetchRoutine(tagsFetch, category, tagsExcludeFetch)
