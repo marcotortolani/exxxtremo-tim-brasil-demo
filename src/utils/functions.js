@@ -1,35 +1,42 @@
+// src/utils/functions.js
+
 export function cleanDataPosts({
   posts,
   categorySlug,
   allCategoriesData,
   videosCategoryID,
 }) {
-
   // process the content and return an object with id, title, images array, paragraph excerpt array
   let data = []
   for (let i = 0; i < posts.length; i++) {
     try {
       const post = posts[i]
+      if (!post) continue
+
       let imgArray = [],
         pExcerpt = []
-      if (!post) continue
-      post.excerpt.rendered
-        .split('</p>')
-        .map((item) => item.trim())
-        .filter((item) => item !== '')
-        .forEach((paragraph) => {
-          pExcerpt.push(paragraph.replace(/<[^>]+>/g, ''))
-        })
 
-      post.content.rendered
-        .split('</p>')
-        .map((item) => item.trim())
-        .forEach((element) => {
-          if (element.includes('<img')) {
-            const image = element.match(/src="(.*?)"/)[1].replaceAll('"', '')
-            imgArray.push(image)
-          }
-        })
+      if (post?.excerpt?.rendered) {
+        post?.excerpt?.rendered
+          .split('</p>')
+          .map((item) => item.trim())
+          .filter((item) => item !== '')
+          .forEach((paragraph) => {
+            pExcerpt.push(paragraph.replace(/<[^>]+>/g, ''))
+          })
+      }
+
+      if (post?.content?.rendered) {
+        post?.content?.rendered
+          .split('</p>')
+          .map((item) => item.trim())
+          .forEach((element) => {
+            if (element.includes('<img')) {
+              const image = element.match(/src="(.*?)"/)[1].replaceAll('"', '')
+              imgArray.push(image)
+            }
+          })
+      }
 
       data.push({
         id: post.id,
@@ -41,9 +48,9 @@ export function cleanDataPosts({
                 (categ) =>
                   categ.id ===
                   post.categories.filter((cat) => cat !== videosCategoryID)[0],
-              ).slug,
-        title: post.title.rendered,
-        excerpt: pExcerpt[0],
+              ).slug || '',
+        title: post?.title?.rendered || '',
+        excerpt: pExcerpt[0] || '',
         images: imgArray,
       })
     } catch (e) {

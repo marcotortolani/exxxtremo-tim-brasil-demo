@@ -40,6 +40,7 @@ export const useTraining = () => {
       try {
         const category = getCategoryID(apiCategories, params.group)
         const exercises = await fetchPosts(category, tagsToFetch, tagsToExlude)
+
         const data = getRoutine(exercises, level, apiTags)
 
         const timer = setTimeout(() => {

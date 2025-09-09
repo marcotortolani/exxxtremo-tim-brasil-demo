@@ -20,14 +20,17 @@ export const getRoutine = (
   const tagAdvanced = getTagBySlug(tags, 'advanced')
 
   let data = []
-  const exercisesBeginner = exercises.filter((item) =>
-    item.tags.some(
-      (tagId) => ![tagIntermediate?.id, tagAdvanced?.id].includes(tagId),
-    ),
+  const exercisesBeginner = exercises.filter(
+    (item) =>
+      !item.tags.some((tagId) =>
+        [tagIntermediate?.id, tagAdvanced?.id].includes(tagId),
+      ),
   )
+
   const exercisesIntermediate = exercises.filter((item) =>
     item.tags.some((tagId) => tagId === tagIntermediate.id),
   )
+
   const exercisesAdvanced = exercises.filter((item) =>
     item.tags.some((tagId) => tagId === tagAdvanced.id),
   )
@@ -51,22 +54,36 @@ export const getRoutine = (
     case 3:
       data = [...shuffle(exercisesAdvanced).slice(0, EXERCISES_PER_DAY)]
 
-      if (exercisesAdvanced.length < EXERCISES_PER_DAY) {
-        data = [
-          ...data,
-          ...shuffle(exercisesIntermediate).slice(
-            0,
-            EXERCISES_PER_DAY - exercisesAdvanced.length,
-          ),
-        ]
-      }
+      // TODO: descomentar cuando los tags "avanzado" e "intermedio" tengan rutinas propias
+      // if (exercisesAdvanced.length < EXERCISES_PER_DAY) {
+      //   console.log('completando ejercicios')
+      //   data = [
+      //     ...data,
+      //     ...shuffle(exercisesIntermediate).slice(
+      //       0,
+      //       EXERCISES_PER_DAY - exercisesAdvanced.length,
+      //     ),
+      //   ]
+      // }
 
-      if (data.length < EXERCISES_PER_DAY) {
+      // if (data.length < EXERCISES_PER_DAY) {
+      //   console.log('completando ejercicios')
+
+      //   data = [
+      //     ...data,
+      //     ...shuffle(exercisesBeginner).slice(
+      //       0,
+      //       EXERCISES_PER_DAY - data.length,
+      //     ),
+      //   ]
+      // }
+      // TODO: eliminar esto cuando los tags "avanzado" e "intermedio" tengan rutinas propias
+      if (exercisesAdvanced.length < EXERCISES_PER_DAY) {
         data = [
           ...data,
           ...shuffle(exercisesBeginner).slice(
             0,
-            EXERCISES_PER_DAY - data.length,
+            EXERCISES_PER_DAY - exercisesAdvanced.length,
           ),
         ]
       }
@@ -118,6 +135,7 @@ export const getTagsAndTagsExcludedByLevel = ({ level, apiTags }) => {
       .map((tag) => tag.id)
       .join(',')
   }
+
   // TODO: descomentar cuando el nivel "intermediate" tenga rutinas propias
   // if (level === 2) {
   //   tagsExclude = apiTags
