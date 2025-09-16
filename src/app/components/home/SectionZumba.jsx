@@ -14,7 +14,6 @@ export default async function SectionZumba() {
   const { data } = await getNewData(
     `/posts?per_page=3&categories=${CATEGORIES[catName]}`,
   )
-  
 
   return (
     <section className=" z-50  w-screen md:w-full lg:max-w-screen-xl h-fit my-10 relative top-0 px-1 flex flex-col gap-0 md:gap-2 xl:gap-4 ">

@@ -4,10 +4,6 @@ import { Trainer } from '@/app/components/home/Trainers'
 
 import dictionary from '@/dictionary/lang.json'
 
-import trainer01 from '/public/assets/img/entrenador4.webp'
-import trainer02 from '/public/assets/img/entrenador3.webp'
-import trainer03 from '/public/assets/img/entrenador2.webp'
-import trainer04 from '/public/assets/img/entrenador1.webp'
 import { CATEGORIES } from '@/lib/constants'
 import { getNewData } from '@/services/api-content'
 
@@ -17,9 +13,9 @@ export default async function Page() {
     `/posts?per_page=14&categories=${categoriesReq}`,
   )
 
-  // const { data: trainers } = await getNewData(
-  //   `/categories?per_page=50&parent=${CATEGORIES['trainers']}`,
-  // )
+  const { data: trainers } = await getNewData(
+    `/categories?per_page=50&parent=${CATEGORIES['trainers']}`,
+  )
 
   return (
     <main
@@ -33,36 +29,18 @@ export default async function Page() {
         >
           {dictionary['Trainers']}
         </h1>
-        <ShareSocialMedia
-          title={dictionary['Trainers']}
-          category="trainers"
-        />
+        <ShareSocialMedia title={dictionary['Trainers']} category="trainers" />
       </div>
       <div className=" w-full h-fit grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
-        <Trainer
-          name="Carlos"
-          image={trainer01}
-          position={dictionary['Cardio']}
-          href="/trainers/carlos"
-        />
-        <Trainer
-          name="Elena"
-          image={trainer02}
-          position={dictionary['Aerobic']}
-          href="/trainers/elena"
-        />
-        <Trainer
-          name="Leo"
-          image={trainer03}
-          position={dictionary['Running']}
-          href="/trainers/leo"
-        />
-        <Trainer
-          name="Carolina"
-          image={trainer04}
-          position={dictionary['Nutrionist']}
-          href="/trainers/carolina"
-        />
+        {trainers &&
+          trainers.map((trainer) => (
+            <Trainer
+              key={trainer.id}
+              name={trainer.name}
+              image={trainer?.image}
+              href={`/trainers/${trainer.slug}`}
+            />
+          ))}
       </div>
 
       <SliderRecommended posts={data} />

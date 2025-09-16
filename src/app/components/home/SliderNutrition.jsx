@@ -33,6 +33,8 @@ const breakpoints = {
 }
 
 export default function SliderNutrition({ posts }) {
+  console.log(posts[0])
+
   return (
     <section className=" z-50  w-screen lg:max-w-screen-xl flex flex-col items-start overflow-hidden h-fit relative top-0 ">
       <div className=" pl-3 mb-2 ">
@@ -53,7 +55,7 @@ export default function SliderNutrition({ posts }) {
         }}
       >
         {posts?.map((post, index) => {
-          const imagePost = getImageHeaderPost(post)
+          // const imagePost = getImageHeaderPost(post)
 
           return (
             <SwiperSlide
@@ -71,10 +73,11 @@ export default function SliderNutrition({ posts }) {
               >
                 <div className="   relative w-full h-full ">
                   <div className=" -z-10 relative aspect-[2/3] lg:aspect-[5/6] top-0 w-full h-full  overflow-hidden">
-                    {imagePost?.length > 0 ? (
+                    {post?.featured_image &&
+                    post?.featured_image[0]?.length > 0 ? (
                       <Image
                         className={`  relative object-cover w-full h-full rounded-lg`}
-                        src={imagePost}
+                        src={post?.featured_image[0]}
                         as="image"
                         fill
                         priority={index === 0}

@@ -52,6 +52,8 @@ export default async function Home() {
       <SectionZumba />
       <SectionShorts />
       <SectionNutrition />
+      {/** */}
+
       {/* <SectionHealthyLife  /> */}
       {/* <SectionRecommended /> */}
       {/* <SectionSports /> */}

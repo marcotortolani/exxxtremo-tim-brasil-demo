@@ -1,7 +1,8 @@
 'use client'
 import React, { useEffect, useState, useContext } from 'react'
 import Image from 'next/image'
-import ReactHtmlParser from 'react-html-parser'
+
+import parse from 'html-react-parser'
 import ShareSocialMedia from '@/app/components/page-post/ShareSocialMedia'
 import ButtonLikeFav from '@/app/components/ui/ButtonLikeFav'
 import { getNewData } from '@/services/api-content'
@@ -12,6 +13,7 @@ import Link from 'next/link'
 
 import { CATEGORIES } from '@/lib/constants'
 import dictionary from '@/dictionary/lang.json'
+import defaultImage from 'public/assets/favicon-totalfitness.webp'
 
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
@@ -72,10 +74,10 @@ export default function page() {
       </div>
       <section className=" w-full lg:max-w-5xl grid grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5 md:gap-7 lg:gap-6">
         {posts?.map((post, i) => {
-          const imageFeaturedPattern =
-            /<img\s+[^>]*class=["'][^"']*img-destacada[^"']*["'][^>]*src=["'](.+?)["'][^>]*>|<img\s+[^>]*src=["'](.+?)["'][^>]*class=["'][^"']*img-destacada[^"']*["'][^>]*>/i
-          const match = imageFeaturedPattern.exec(post?.content?.rendered)
-          const imageFeatured = match[1]
+          // const imageFeaturedPattern =
+          //   /<img\s+[^>]*class=["'][^"']*img-destacada[^"']*["'][^>]*src=["'](.+?)["'][^>]*>|<img\s+[^>]*src=["'](.+?)["'][^>]*class=["'][^"']*img-destacada[^"']*["'][^>]*>/i
+          // const match = imageFeaturedPattern.exec(post?.content?.rendered)
+          // const imageFeatured = match[1]
 
           const postCleaned = cleanDataPosts({
             posts: new Array(post),
@@ -93,7 +95,7 @@ export default function page() {
                   <Image
                     className="w-full h-full object-cover shadow-md shadow-black/50 rounded-lg"
                     fill
-                    src={imageFeatured}
+                    src={post?.featured_image[0] || defaultImage}
                     alt={`${post?.title?.rendered}`}
                   />
                   <div className=" z-10 absolute top-0 left-0 w-full h-full bg-black/30 rounded-lg"></div>
@@ -103,7 +105,7 @@ export default function page() {
                 </div>
 
                 <p className=" pb-1  font-oswaldReg text-xs lg:text-sm leading-3 line-clamp-2 text-White/80">
-                  {ReactHtmlParser(post?.title?.rendered)}
+                  {parse(post?.title?.rendered)}
                 </p>
               </div>
             </Link>
