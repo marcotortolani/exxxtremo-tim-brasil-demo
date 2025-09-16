@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect, useContext } from 'react'
 import Image from 'next/image'
-import { useParams } from 'next/navigation'
+// import { useParams } from 'next/navigation'
 import { StateContext } from '@/providers/StateProvider'
 import useCountdown from '@/hooks/useCountDown'
 
@@ -59,9 +59,8 @@ const EXERCISE_STATES = {
 }
 
 export default function Page() {
-  const params = useParams()
-  const { id } = params
-  console.log({ id })
+  // const params = useParams()
+  // const { id } = params
 
   const { groupsRoutines, setGroupsRoutines, stateRoutines, setStateRoutines } =
     useContext(StateContext)

@@ -26,6 +26,8 @@ export default function page() {
   const [totalPages, setTotalPages] = useState(1)
   const [contentRecommended, setContentRecommended] = useState([])
 
+  console.log(posts[0])
+
   useEffect(() => {
     if (!apiCategories) return
     const categoriesReq = [
@@ -76,7 +78,7 @@ export default function page() {
 
       <section className=" w-full h-fit lg:max-w-5xl grid grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5 md:gap-7 lg:gap-6">
         {posts?.map((post, i) => {
-          const imageFeatured = post?.featured_image || defaultImage
+          const imageFeatured = post?.featured_image[0] || defaultImage
 
           const postCleaned = cleanDataPosts({
             posts: new Array(post),

@@ -33,7 +33,6 @@ const breakpoints = {
 }
 
 export default function SliderNutrition({ posts }) {
-  console.log(posts[0])
 
   return (
     <section className=" z-50  w-screen lg:max-w-screen-xl flex flex-col items-start overflow-hidden h-fit relative top-0 ">
