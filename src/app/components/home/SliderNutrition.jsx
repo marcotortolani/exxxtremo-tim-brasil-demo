@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { TitleSummary } from '../ui/TitleSummary'
 import ImageMissing from '../ImageMissing'
-import { getImageHeaderPost } from '@/utils/functions'
+
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Navigation } from 'swiper/modules'
 import SwiperCore from 'swiper'
@@ -33,7 +33,6 @@ const breakpoints = {
 }
 
 export default function SliderNutrition({ posts }) {
-
   return (
     <section className=" z-50  w-screen lg:max-w-screen-xl flex flex-col items-start overflow-hidden h-fit relative top-0 ">
       <div className=" pl-3 mb-2 ">
@@ -54,16 +53,10 @@ export default function SliderNutrition({ posts }) {
         }}
       >
         {posts?.map((post, index) => {
-          // const imagePost = getImageHeaderPost(post)
-
           return (
             <SwiperSlide
               key={`${post.id}-nutrition-${index}`}
               className={` w-full  h-full `}
-              // style={{
-              //   marginLeft: index === 0 ? ' 10px ' : ' 0px ',
-              //   marginRight: index === 5 ? ' 10px ' : ' 0px ',
-              // }}
             >
               <Link
                 href={`/nutrition/${post?.slug}`}
