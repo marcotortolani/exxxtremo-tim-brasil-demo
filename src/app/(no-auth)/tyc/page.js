@@ -20,9 +20,9 @@ export default async function Page() {
           <TitleStyled>Termos e Condições</TitleStyled>
           <ParagraphStyled>
             Neste documento são estabelecidos os termos e condições que regulam
-            o uso do serviço denominado "Total Fitness" (doravante o "Serviço"
-            ou a "Opção de entretenimento") oferecido pela MOOB MEDIA BUSINESS,
-            C.A (o "Prestador"), por meio das quais os usuários de XXXXXX –
+            o uso do serviço denominado "Exxxtremo" (doravante o "Serviço" ou a
+            "Opção de entretenimento") oferecido pela MOOB MEDIA BUSINESS, C.A
+            (o "Prestador"), por meio das quais os usuários de XXXXXX –
             (doravante a "Operadora") poderão acessar desde seu dispositivo
             móvel, Tablet, laptop ou PC, a conteúdo dedicado de fitness, onde
             poderá desfrutar de novidades, vídeos, rotinas e dicas de personal
@@ -30,9 +30,9 @@ export default async function Page() {
           </ParagraphStyled>
         </section>
         <section className=" w-full flex flex-col gap-4">
-          <Title2Styled>O SERVIÇO: Total Fitness</Title2Styled>
+          <Title2Styled>O SERVIÇO: Exxxtremo</Title2Styled>
           <ParagraphStyled>
-            Total Fitness é um serviço de entretenimento que permite ao cliente
+            Exxxtremo é um serviço de entretenimento que permite ao cliente
             acessar, através de um celular, Tablet ou computador, conteúdo de
             fitness, onde poderá desfrutar de novidades, vídeos, rotinas e dicas
             de personal trainers, nas condições que se detalham nestes Termos e
@@ -58,10 +58,10 @@ export default async function Page() {
             Fitness. As taxas por navegação e transmissão de dados não estão
             incluídas no serviço. Os usuários também poderão se inscrever
             através da página web de XXXXX, na seção opções de entretenimento
-            digital, selecionando a opção de Total Fitness, através da URL
-            própria do serviço{' '}
+            digital, selecionando a opção de Exxxtremo, através da URL própria
+            do serviço{' '}
             <Link className=" text-sky-600 " href="/" target="_blank">
-              Total Fitness
+              Exxxtremo
             </Link>{' '}
             ou desde qualquer outra seção que a operadora disponha para isso.
           </ParagraphStyled>
@@ -82,10 +82,10 @@ export default async function Page() {
             serviço.
           </ParagraphStyled>
           <ParagraphStyled>
-            Total Fitness enviará do número XXXX uma mensagem de texto com a
+            Exxxtremo enviará do número XXXX uma mensagem de texto com a
             informação de acesso ao portal e o preço pelo menos uma vez por mês.
-            Adicionalmente, Total Fitness enviará ao usuário mensagens de texto
-            com informação relevante nos períodos onde se efetuem sorteios,
+            Adicionalmente, Exxxtremo enviará ao usuário mensagens de texto com
+            informação relevante nos períodos onde se efetuem sorteios,
             premiações e/ou atividades de interesse para o segmento.
           </ParagraphStyled>
           <ParagraphStyled>

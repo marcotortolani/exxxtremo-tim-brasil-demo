@@ -37,6 +37,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Versions
 
+- v1.2.3:
+  Cambia el nombre del producto a Exxxtremo
+  Se cambian imagenes de producto, logos y favicon
+
 - v1.2.2:
   Se corrige falla en las dependencias con el Html Parser
   Se corrige nombres de los trainers nuevos

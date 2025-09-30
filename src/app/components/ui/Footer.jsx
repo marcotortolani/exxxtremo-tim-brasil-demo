@@ -40,7 +40,7 @@ export default function Footer() {
       </div>
       <div className=" h-1/3 flex flex-col items-center gap-0 pointer-events-none cursor-defaul select-none">
         <p className=" uppercase text-xs md:text-sm lg:text-base leading-4 text-neutral-500">
-          {dictionary['Total Fitness is a Media Moob website']}
+          {dictionary['Exxxtremo is a Media Moob website']}
         </p>
         <p className=" uppercase text-xs md:text-sm lg:text-base leading-4 text-neutral-500">
           {dictionary['All rights reserved']}

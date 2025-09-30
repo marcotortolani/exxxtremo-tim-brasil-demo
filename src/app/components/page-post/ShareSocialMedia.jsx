@@ -39,14 +39,14 @@ export default function ShareSocialMedia({
       </button>
       {modalOpen && (
         <div className=" absolute top-8 right-0 bg-White p-4 rounded-xl shadow-md shadow-black/80 flex items-center justify-center flex-nowrap gap-3">
-          <FacebookShareButton url={url} hashtag={`total-fitness`}>
+          <FacebookShareButton url={url} hashtag={dictionary['sitename']}>
             <FacebookIcon w={30} h={30} fill="#363636" />
           </FacebookShareButton>
           <TwitterShareButton
             url={url}
             title={title}
             hashtags={[
-              'totalfitness',
+              dictionary['sitename'],
               'fitness',
               dictionary['Nutrition'],
               dictionary['Sports'],
@@ -57,13 +57,13 @@ export default function ShareSocialMedia({
           </TwitterShareButton>
           <WhatsappShareButton
             url={url}
-            title={`${dictionary['Check out this content from Total Fitness']}: ${title}`}
+            title={`${dictionary['Check out this content from Exxxtremo']}: ${title}`}
           >
             <WhatsappIcon w={30} h={30} fill="#363636" />
           </WhatsappShareButton>
           <TelegramShareButton
             url={url}
-            title={`${dictionary['Check out this content from Total Fitness']}: ${title}`}
+            title={`${dictionary['Check out this content from Exxxtremo']}: ${title}`}
           >
             <TelegramIcon w={30} h={30} fill="#363636" />
           </TelegramShareButton>

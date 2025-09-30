@@ -15,29 +15,27 @@ import ChatBot from './components/ChatBot'
 const oswald = Oswald({ subsets: ['latin'], preload: true })
 
 export const metadata = {
-  title: dictionary['Total Fitness'],
+  title: dictionary['Exxxtremo'],
   description:
     dictionary[
       'Fitness content portal & workout routine creation app. Designed and developed by Media Moob.'
     ],
-  version: '1.2.2',
-  metadataBase: new URL('https://app-fitness-demo.vercel.app/'),
+  version: '1.2.3',
   openGraph: {
-    title: dictionary['Total Fitness'],
+    title: dictionary['Exxxtremo'],
     description:
       dictionary[
         'Fitness content portal & workout routine creation app. Designed and developed by Media Moob.'
       ],
-    url: 'https://app-fitness-demo.vercel.app/',
     siteName: dictionary['siteName'],
     locale: dictionary['locale'],
     type: 'website',
     images: [
       {
-        url: '/assets/totalfitness-horizontal.webp',
+        url: '/assets/exxxtremo-horizontal.webp',
         width: 1921,
         height: 301,
-        alt: dictionary['Total Fitness'],
+        alt: dictionary['Exxxtremo'],
       },
     ],
   },

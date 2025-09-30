@@ -11,7 +11,7 @@ import { StateContext } from '@/providers/StateProvider'
 import Link from 'next/link'
 
 import dictionary from '@/dictionary/lang.json'
-import defaultImage from 'public/assets/favicon-totalfitness.webp'
+import defaultImage from 'public/assets/default-product.webp'
 
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { CATEGORIES } from '@/lib/constants'

@@ -19,7 +19,7 @@ const DATA_HOME_COVER = [
   {
     id: 1,
     text01: dictionary['Trainers'],
-    textHighlighted: dictionary['Team Total Fitness'],
+    textHighlighted: dictionary['Team Exxxtremo'],
     text02: '',
     badge01: dictionary['Train with the best'],
     badge02: dictionary['Meet them here'],

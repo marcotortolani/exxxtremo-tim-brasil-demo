@@ -238,7 +238,7 @@ export default function Header() {
                 className=" pl-8 uppercase font-oswaldReg text-base md:text-lg"
                 href={'/trainers'}
               >
-                {dictionary['Team Total Fitness']}{' '}
+                {dictionary['Team Exxxtremo']}{' '}
                 <span className=" font-oswaldLight capitalize">
                   ({dictionary['Trainers']})
                 </span>
