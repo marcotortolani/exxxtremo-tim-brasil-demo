@@ -50,12 +50,12 @@ export function FavouriteCard({ post, index }) {
       <div
         className={`relative w-full aspect-square lg:aspect-[0] order-last col-span-1 lg:col-span-3 `}
       >
-        {post?.images?.length > 0 ? (
+        {post?.featured_image ? (
           <Image
             className={` absolute w-full h-full  object-center object-cover  rounded-lg md:rounded-xl lg:rounded-2xl`}
             fill
             sizes="(max-width: 350px)"
-            src={post.images[0]}
+            src={post?.featured_image[0]}
             alt={`Image ${post.title}`}
           />
         ) : (

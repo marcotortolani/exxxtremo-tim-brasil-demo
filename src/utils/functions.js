@@ -52,6 +52,7 @@ export function cleanDataPosts({
         title: post?.title?.rendered || '',
         excerpt: pExcerpt[0] || '',
         images: imgArray,
+        featured_image: post?.featured_image || '',
       })
     } catch (e) {
       console.log({ e })
