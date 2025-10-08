@@ -14,7 +14,7 @@ SwiperCore.use([Pagination])
 import parse from 'html-react-parser'
 
 import dictionary from '@/dictionary/lang.json'
-import defaultImage from 'public/assets/default-product.webp'
+import defaultImage from '/public/assets/default-product.webp'
 
 const breakpoints = {
   0: {

@@ -13,7 +13,7 @@ import Link from 'next/link'
 
 import { CATEGORIES } from '@/lib/constants'
 import dictionary from '@/dictionary/lang.json'
-import defaultImage from 'public/assets/default-product.webp'
+import defaultImage from '/public/assets/default-product.webp'
 
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
