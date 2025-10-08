@@ -1,12 +1,12 @@
-import { cookies } from 'next/headers'
+//import { cookies } from 'next/headers'
 import { TrialProvider } from '@/providers/TrialProvider'
-import NextCrypto from 'next-crypto'
+//import NextCrypto from 'next-crypto'
 
-const cryptoUser = new NextCrypto('user enabled')
+//const cryptoUser = new NextCrypto('user enabled')
 
 export default async function Layout({ children }) {
-  const cookieStore = cookies()
-  const activeUser = cookieStore.get('enabledUser')
+  //const cookieStore = cookies()
+  //const activeUser = cookieStore.get('enabledUser')
   //let userEnabled = false
   let userEnabled = true
 

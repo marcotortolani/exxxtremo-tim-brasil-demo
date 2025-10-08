@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import {
   useNutritionPostsHook,
   useRoutineWeek,
@@ -16,7 +17,6 @@ import Lottie from 'lottie-react'
 import sandClock from '/src/lottie/sand-clock.json'
 import { cleanDataPosts } from '@/utils/functions'
 import ButtonLikeFav from '@/app/components/ui/ButtonLikeFav'
-import Link from 'next/link'
 import { DAYS } from '@/lib/routine/routine-constants'
 import { TAGS } from '@/lib/constants'
 import { RoutineWeeks } from '@/lib/routine/components/RoutineWeeks'
@@ -162,17 +162,11 @@ export const RoutineScreen = () => {
             </div>
           ) : (
             <div className=" w-full h-[60vh] min-h-fit max-h-[650px] md:h-full md:max-h-[800px] pb-16 overflow-y-scroll lg:overflow-hidden scroll-smooth scrollbar-thin grid">
+              {/* Nutritional */}
               <div
                 className={` w-full h-fit min-h-fit max-h-[550px] md:min-h-[700px] md:max-h-[750px] py-4 px-3 pb-20 lg:px-2 grid grid-cols-3 grid-rows-2 gap-4 `}
               >
                 {nutritionPosts?.slice(0, 6)?.map((post, i) => {
-                  const imageFeaturedPattern =
-                    /<img\s+[^>]*class=["'][^"']*img-destacada[^"']*["'][^>]*src=["'](.+?)["'][^>]*>|<img\s+[^>]*src=["'](.+?)["'][^>]*class=["'][^"']*img-destacada[^"']*["'][^>]*>/i
-                  const match = imageFeaturedPattern.exec(
-                    post?.content?.rendered,
-                  )
-                  const imageFeatured = match[1]
-
                   const postCleaned = cleanDataPosts({
                     posts: new Array(post),
                     categorySlug: 'nutrition',
@@ -189,7 +183,7 @@ export const RoutineScreen = () => {
                           <Image
                             className="w-full h-full object-cover shadow-md shadow-black/50 rounded-lg"
                             fill
-                            src={imageFeatured}
+                            src={post?.featured_image?.[0]}
                             sizes="100%"
                             alt={`${post?.title?.rendered}`}
                           />
