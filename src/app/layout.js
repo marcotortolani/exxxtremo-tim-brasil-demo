@@ -21,7 +21,10 @@ export const metadata = {
       'Fitness content portal & workout routine creation app. Designed and developed by Media Moob.'
     ],
   version: '1.2.3',
+  metadataBase: new URL('http://br.tim.exxxtremo.club/'),
   openGraph: {
+    type: 'website',
+    url: 'http://br.tim.exxxtremo.club/',
     title: dictionary['Exxxtremo'],
     description:
       dictionary[
