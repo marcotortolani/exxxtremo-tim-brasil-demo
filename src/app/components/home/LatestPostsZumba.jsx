@@ -13,7 +13,7 @@ export default function LatestPostsZumba({ posts }) {
             <Link href={`/zumba/${post?.slug}`} target="_self" className="">
               <div className="  aspect-[3/2] xl:aspect-video relative w-full h-full ">
                 <div className=" -z-10 relative  top-0 w-full h-full  overflow-hidden">
-                  {post?.featured_image[0]?.length ? (
+                  {post?.featured_image ? (
                     <Image
                       className={`  relative object-cover w-full h-full rounded-lg`}
                       src={post?.featured_image[0]}

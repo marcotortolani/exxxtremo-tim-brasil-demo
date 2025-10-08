@@ -67,7 +67,7 @@ export default function SliderShorts({ posts }) {
               >
                 <div className="  aspect-[2/3] relative w-full h-full ">
                   <div className=" -z-10 relative  top-0 w-full h-full  overflow-hidden">
-                    {post?.featured_image.length ? (
+                    {post?.featured_image ? (
                       <Image
                         className={`  relative object-cover w-full h-full rounded-lg`}
                         src={post?.featured_image[0]}

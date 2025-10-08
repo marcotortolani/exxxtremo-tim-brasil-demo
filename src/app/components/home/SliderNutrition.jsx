@@ -65,8 +65,7 @@ export default function SliderNutrition({ posts }) {
               >
                 <div className="   relative w-full h-full ">
                   <div className=" -z-10 relative aspect-[2/3] lg:aspect-[5/6] top-0 w-full h-full  overflow-hidden">
-                    {post?.featured_image &&
-                    post?.featured_image[0]?.length > 0 ? (
+                    {post?.featured_image ? (
                       <Image
                         className={`  relative object-cover w-full h-full rounded-lg`}
                         src={post?.featured_image[0]}
