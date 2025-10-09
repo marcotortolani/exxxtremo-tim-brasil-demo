@@ -1,5 +1,5 @@
-const URL_CONTENT_TEST = 'http://content.test.br.tim.totalfit.moob.club/'
-const URL_CONTENT_BASE = 'http://content.br.tim.totalfit.moob.club/'
+const URL_CONTENT_TEST = 'http://content.test.br.tim.exxxtremo.moob.club/'
+const URL_CONTENT_BASE = 'http://content.br.tim.exxxtremo.moob.club/'
 // ---------------------------------------------------------------------
 export const PRODUCT_NAME = 'exxxtremo-tim-brasil'
 export const API_CONTENT = URL_CONTENT_BASE + 'wp-json/wp/v2'

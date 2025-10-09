@@ -37,6 +37,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Versions
 
+- v1.2.4:
+  Se cambia el content de WP para Exxxtremo
+
 - v1.2.3:
   Cambia el nombre del producto a Exxxtremo
   Se cambian imagenes de producto, logos y favicon

@@ -19,7 +19,12 @@ export const getNewData = async (slug) => {
     })
 
     if (!res.ok) {
-      throw new Error(`Error ${res.status}: ${res.statusText}`)
+      const errorDetail = await res.text()
+      throw new Error(
+        `API Fetch Error: Status ${res.status} - ${
+          res.statusText
+        }. Response: ${errorDetail.substring(0, 100)}...`,
+      )
     }
 
     const data = await res.json()
