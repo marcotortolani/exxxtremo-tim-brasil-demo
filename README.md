@@ -37,6 +37,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Versions
 
+- v1.2.5:
+  Se arregla las favorites cards
+
 - v1.2.4:
   Se cambia el content de WP para Exxxtremo
 
