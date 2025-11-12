@@ -37,6 +37,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Versions
 
+- v1.2.6:
+  Se corrige falla boton de RoutineWeeks, se reemplaza Link por button
+
 - v1.2.5:
   Se arregla las favorites cards
 
