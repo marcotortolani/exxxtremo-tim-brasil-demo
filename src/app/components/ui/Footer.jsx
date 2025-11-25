@@ -53,6 +53,12 @@ export default function Footer() {
         {dictionary['Terms and Conditions']}
       </Link>
       <Link
+        href={'/privacy-policy'}
+        className=" h-1/4 uppercase text-xs md:text-sm lg:text-base text-sky-600 hover:text-sky-700 underline"
+      >
+        {dictionary['Privacy Policy']}
+      </Link>
+      <Link
         href={URL_SUBSCRIPTION}
         target="_blank"
         className=" h-1/4 uppercase text-xs md:text-sm lg:text-base text-sky-600 hover:text-sky-700 underline"

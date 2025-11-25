@@ -283,7 +283,7 @@ export default function Header() {
                   {dictionary['This is a Media Moob website']}
                 </p>
               </div>
-              <div className=" w-full justify-evenly flex items-center gap-2">
+              <div className=" w-full justify-evenly flex flex-col items-start gap-2">
                 <Link
                   href={'/tyc/'}
                   className={
@@ -292,6 +292,15 @@ export default function Header() {
                   }
                 >
                   {dictionary['Terms and Conditions']}
+                </Link>
+                <Link
+                  href={'/privacy-policy'}
+                  className={
+                    poppins.className +
+                    ' font-light underline text-base md:text-lg'
+                  }
+                >
+                  {dictionary['Privacy Policy']}
                 </Link>
                 <Link
                   href={'/'}
