@@ -22,11 +22,10 @@ export default async function Page() {
             Neste documento são estabelecidos os termos e condições que regulam
             o uso do serviço denominado "Exxxtremo" (doravante o "Serviço" ou a
             "Opção de entretenimento") oferecido pela MOOB MEDIA BUSINESS, C.A
-            (o "Prestador"), por meio das quais os usuários de XXXXXX –
-            (doravante a "Operadora") poderão acessar desde seu dispositivo
-            móvel, Tablet, laptop ou PC, a conteúdo dedicado de fitness, onde
-            poderá desfrutar de novidades, vídeos, rotinas e dicas de personal
-            trainers.
+            (o "Prestador"), por meio das quais os usuários de Tim – (doravante
+            a "Operadora") poderão acessar desde seu dispositivo móvel, Tablet,
+            laptop ou PC, a conteúdo dedicado de fitness, onde poderá desfrutar
+            de novidades, vídeos, rotinas e dicas de personal trainers.
           </ParagraphStyled>
         </section>
         <section className=" w-full flex flex-col gap-4">
@@ -39,17 +38,17 @@ export default async function Page() {
             Condições.
           </ParagraphStyled>
           <ParagraphStyled>
-            Nesse sentido, todos aqueles clientes XXXXX que assim desejarem
-            poderão se inscrever solicitando sua ativação na opção de
-            entretenimento mediante o envio de um SMS com o comando que se
-            considere como válido para tal ação ao número XXXX (o preço da
-            mensagem é equivalente a uma mensagem de texto por uso).
+            Nesse sentido, todos aqueles clientes que assim desejarem poderão se
+            inscrever solicitando sua ativação na opção de entretenimento
+            mediante o envio de um SMS com o comando que se considere como
+            válido para tal ação ao número 2890 (o preço da mensagem é
+            equivalente a uma mensagem de texto por uso).
           </ParagraphStyled>
           <ParagraphStyled>
             Ao enviar a palavra{' '}
             <span className=" font-semibold">
               ATIVAR, ou o comando que se comunique para esta ação, ao número
-              XXXX
+              2890
             </span>
             , o cliente receberá um SMS com o link e instruções de acesso ao
             portal, preço do serviço, frequência de cobrança e um pin para
@@ -57,9 +56,8 @@ export default async function Page() {
             desfrutar sem limites de todo o conteúdo que oferece o Total
             Fitness. As taxas por navegação e transmissão de dados não estão
             incluídas no serviço. Os usuários também poderão se inscrever
-            através da página web de XXXXX, na seção opções de entretenimento
-            digital, selecionando a opção de Exxxtremo, através da URL própria
-            do serviço{' '}
+            através da página web, na seção opções de entretenimento digital,
+            selecionando a opção de Exxxtremo, através da URL própria do serviço{' '}
             <Link className=" text-sky-600 " href="/" target="_blank">
               Exxxtremo
             </Link>{' '}
@@ -71,7 +69,7 @@ export default async function Page() {
             serviço por parte do usuário, e até o momento em que este deseja
             solicitar a desativação do serviço. Para cancelar a assinatura o
             usuário deve enviar a palavra{' '}
-            <span className=" font-semibold">CANCELAR ao número XXXX</span> e
+            <span className=" font-semibold">CANCELAR ao número 2890</span> e
             este receberá uma mensagem de confirmação.
           </ParagraphStyled>
           <ParagraphStyled>
@@ -82,7 +80,7 @@ export default async function Page() {
             serviço.
           </ParagraphStyled>
           <ParagraphStyled>
-            Exxxtremo enviará do número XXXX uma mensagem de texto com a
+            Exxxtremo enviará do número 2890 uma mensagem de texto com a
             informação de acesso ao portal e o preço pelo menos uma vez por mês.
             Adicionalmente, Exxxtremo enviará ao usuário mensagens de texto com
             informação relevante nos períodos onde se efetuem sorteios,
@@ -94,7 +92,7 @@ export default async function Page() {
             cliente se inscreve no serviço. Também resultarão aplicáveis todas
             aquelas condições particulares, avisos ou instruções de
             funcionamento que se ponham em conhecimento do usuário através da
-            página web de XXXXX ou do Prestador, com relação ao Serviço.
+            página web de ou do Prestador, com relação ao Serviço.
           </ParagraphStyled>
         </section>
         <section className=" w-full flex flex-col gap-4">
@@ -164,7 +162,7 @@ export default async function Page() {
             contratação ou utilização do Serviço. Tampouco serão responsáveis em
             caso de insatisfação pelo conteúdo do serviço. Para estes casos, os
             usuários serão livres para cancelar a assinatura, enviando a palavra{' '}
-            <span className=" font-semibold">CANCELAR ao número XXXX</span>.
+            <span className=" font-semibold">CANCELAR ao número 2890</span>.
           </ParagraphStyled>
           <ParagraphStyled>
             O Prestador não se responsabiliza por aquelas Assinaturas que não
