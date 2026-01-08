@@ -8,7 +8,7 @@ import { CATEGORIES } from '@/lib/constants'
 
 export default async function Trainers() {
   const { data: trainers } = await getNewData(
-    `/categories?per_page=50&parent=${CATEGORIES['trainers']}`,
+    `/categories?per_page=4&parent=${CATEGORIES['trainers']}`,
   )
   return (
     <section className=" z-50  w-screen md:w-full lg:max-w-screen-lg min-[1760px]:max-w-screen-xl px-3 flex flex-col items-start gap-2 xl:gap-3 relative top-0 ">
@@ -18,7 +18,7 @@ export default async function Trainers() {
           colorText="text-white"
         />
       </div>
-      <div className=" w-full h-fit grid grid-cols-4 grid-rows-1 gap-2 md:gap-4 lg:gap-6 min-[1760px]:gap-10">
+      <div className=" w-full h-full min-h-[140px] grid grid-cols-4 grid-rows-1 gap-2 md:gap-4 lg:gap-6 min-[1760px]:gap-10">
         {trainers &&
           trainers.map((trainer) => (
             <Trainer
@@ -46,7 +46,7 @@ export const Trainer = ({ href, name, position = '', image }) => {
   return (
     <Link
       href={href}
-      className="group w-full h-fit aspect-square flex flex-col items-center gap-0.5"
+      className="group w-full h-full aspect-square flex flex-col items-center gap-0.5"
     >
       <div className=" w-full h-full rounded-lg overflow-hidden ">
         <Image
