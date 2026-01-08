@@ -39,6 +39,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - v1.2.7:
   Se actualiza la version de NextJS por vulnerabilidades
+  Se corrigen los params para el fetch del section Pre Training
 
 - v1.2.6:
   Se corrige falla boton de RoutineWeeks, se reemplaza Link por button
