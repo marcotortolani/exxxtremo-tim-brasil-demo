@@ -37,8 +37,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Versions
 
+- v1.2.7:
+  Se actualiza la version de NextJS por vulnerabilidades
+
 - v1.2.6:
   Se corrige falla boton de RoutineWeeks, se reemplaza Link por button
+  Se agregan politicas de privacidad y se corrige numero de ALTA en TyC
 
 - v1.2.5:
   Se arregla las favorites cards
@@ -70,4 +74,3 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - v1.0.0:
   Primer versión con rutinas y training on demand
-  
